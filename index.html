@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dayang Global</title>
+    <link href="https://fonts.loli.net/css2?family=Manrope:wght@400;600;700&family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="lib/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="remix/remixicon.css" />
+    <link href="css/style.css" rel="stylesheet">
+    
+
+</head>
+<body>
+<div id="app" class="home" style="height: 100%;position: relative;">
+
+
+<template>
+
+    <!-- <site-top></site-top> -->
+
+    <div class="web_top" :class="[{ home_web_top: scrollY < windowHeight }, { hide: isHidden }]">
+        <div class="logo " :class="[{ home_logo: scrollY < windowHeight }, { hide: isHidden }]">
+        </div>
+        <div class="menu_box">
+            <div class="language">English <i class="ri-earth-line"></i></div>
+            <div class="menu_btn"><i class="ri-menu-line"></i></div>
+        </div>
+    </div>
+
+    <div class="home_banner">
+         <h1>Hello,<br>Dayang Global</h1>
+         <p>Discover Dayang’s Expertise</p>
+    <video autoplay muted loop id="video-home" oncontextmenu="return false;">
+        <!-- 这里可以添加多个视频源以支持不同浏览器 -->
+        <source src="video/hv.mp4" type="video/mp4">
+        <!-- 备用视频源 -->
+        <source src="video/aibg.webm" type="video/webm">
+        <!-- 如果浏览器不支持视频，可以显示一张图片 -->
+        <!-- <img src="fallback-image.jpg" alt="背景图片"> -->
+    </video>
+    </div>
+
+    <div class="home_bg">
+    <div class="container_box four_core">
+        <p class="subtitle">Founding and Leadership</p>
+        <h1 class="home_title">Dayang International Business</h1>
+        <div class="lbox">1234</div>
+    </div>
+    
+    <div class="container_box home_factorybox">
+        <el-row>
+            <el-col :sm="16" :xs="24">
+            <div class="home_factory_left">
+                <div class="home_factory_titlebox">
+                    <p class="subtitle">World Factory</p>
+                    <h1 class="home_title">Precision and high efficiency to meet diverse global demands</h1>
+                </div>
+                <div class="home_factory_subtitle">
+                    <div class="factory_subtitle_digit">
+                        <h1 class="home_title">7</h1>
+                        <p>7 advanced factories forming a powerful production matrix</p>
+                    </div>
+                    <div class="factory_subtitle_digit">
+                        <h1 class="home_title">4500+</h1>
+                        <p>Over 4,500 top-tier local workers ensuring quality and efficiency</p>
+                    </div>
+                </div>
+            </div>
+            </el-col>
+            <el-col :sm="8" :xs="24">
+            <div class="home_factory_boardBox">
+                    <div class="factory_board">
+                        <div class="factory_board_img"></div>
+                        <div class="factory_board_data">
+                            <h2 style="font-size: 30px;">Capacity</h2>
+                            <ul>
+                                <li>
+                                    <div class="board_img"><img src="images/icon-jacket.png" height="100%" alt=""></div>
+                                    <div class="board_type">
+                                        <p style="font-weight: 800;">Formal Wear</p>
+                                        <p>Monthly Capacity: 270,000 Units</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="board_img"><img src="images/icon-hoodie.png" height="100%" alt=""></div>
+                                    <div class="board_type">
+                                        <p style="font-weight: 800;">Casual Wear</p>
+                                        <p>Monthly Capacity: 50,000 Units</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="board_img"><img src="images/icon-shirt.png" height="100%" alt=""></div>
+                                    <div class="board_type">
+                                        <p style="font-weight: 800;">Shirts</p>
+                                        <p>Monthly Capacity: 50,000 Units</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="board_img"></div>
+                                    <div class="board_type">
+                                        <p style="font-weight: 800;">......</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+            </div>
+            </el-col>
+
+        </el-row>
+    </div>
+    <div class="home_factory_image">
+    </div>
+
+    </div>
+
+    <div class="container_box home_market">
+        <p class="subtitle">Global Market</p>
+        <h1 class="home_title">The global market spans major regions including Asia, Europe, North America and Oceania.</h1>
+    </div>
+    <div class="container_box world_image"></div>
+
+    <div class="container_box">
+        <p class="subtitle">Find us in the world</p>
+        <h1 class="home_title">Contact Us</h1>
+    </div>
+    <div class="container_box home_contact">
+    <el-row>
+        <el-col :sm="8" :xs="24" class="home_contact_a">
+            <p>China Regional Headquarters</p>
+            <ul>
+                <li>No.23 Haerbin Road Economic & Technical Development Zone Dalian, China 116600</li>
+                <li style="margin-top: 20px;">E-mail: dayang@dayang.net</li>
+                <li>Phone: +86 411 88888888</li>
+            </ul>
+        </el-col>
+        <el-col :sm="8" :xs="24" class="home_contact_a">
+            <p>Global Business Department</p>
+            <ul>
+                <li>No. 89 Innovation Boulevard Tech Valley Industrial Park Boston, MA 02210</li>
+                <li style="margin-top: 20px;">E-mail: dayang@dayang.net</li>
+            </ul>
+        </el-col>
+        <el-col :sm="8" :xs="24" class="home_contact_a">
+            <p>North American Business Department</p>
+            <ul>
+                <li>No. 89 Innovation Boulevard Tech Valley Industrial Park Boston, MA 02210</li>
+                <li style="margin-top: 20px;">E-mail: dayang@dayang.net</li>
+            </ul>
+        </el-col>
+    </el-row>
+    </div>
+
+    <div class="container_box contactinfo">
+        <el-form :model="form" label-width="" class="contactinfo_box">
+            
+            <el-row :gutter="60">
+            <el-col :sm="12" :xs="24">
+                <el-form-item label="How can we help? ">
+                <el-input v-model="form.username" placeholder="How can we help?"></el-input>
+                </el-form-item>
+                <div class="contactinfo_name">
+                    <el-form-item label="First Name ">
+                    <el-input v-model="form.FirstName" placeholder="First Name"></el-input>
+                    </el-form-item>
+                    <el-form-item label="Last Name ">
+                    <el-input v-model="form.LastName" placeholder="Last Name"></el-input>
+                    </el-form-item>
+                </div>
+                <el-form-item label="Email ">
+                <el-input v-model="form.Email" placeholder="Email"></el-input>
+                </el-form-item>
+                <el-form-item label="Company">
+                <el-input v-model="form.Company" placeholder="Company"></el-input>
+                </el-form-item>
+            </el-col>
+       
+            <el-col :sm="12" :xs="24">
+                <el-form-item label="Message">
+                <el-input 
+                    type="textarea" 
+                    :rows="8" 
+                    v-model="textarea" 
+                    placeholder="Message">
+                </el-input>
+                </el-form-item>
+                <el-form-item>
+                <el-button type="primary" @click="submitForm" style="width: 100%; height: 50px; margin-top: 20px;">Send</el-button>
+                </el-form-item>
+            </el-col>
+            </el-row>
+            
+        </el-form>
+    </div>
+
+    
+
+    <site-footer></site-footer>
+
+
+</template>  
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- import jquery-->
+    <script type="text/javascript" src="lib/jquery-3.6.0.min.js"></script>
+    <!-- import vue elm-->
+    <script type="text/javascript" src="lib/vue.js"></script>
+    <script type="text/javascript" src="lib/index.js"></script>
+
+    <!--  component  -->
+    <script src="component/footer.js"></script>
+    <!-- <script src="component/top.js"></script> -->
+    
+    <script>
+        
+        var Main = {
+            data() {
+                return {
+                    form: {
+                    username: '',
+                    FirstName: '',
+                    LastName: '',
+                    Email: '',
+                    Company: '',
+                    },
+                    textarea: '',
+                    scrollY: 0,
+                    lastScrollY: 0,
+                    windowHeight: window.innerHeight,
+                    isHidden: false,
+                }
+        },
+
+
+        
+        mounted() {
+            window.addEventListener('scroll', this.handleScroll);
+            window.addEventListener('resize', this.handleResize);
+        },
+        // beforeDestroy() {
+        //     window.removeEventListener('scroll', this.handleScroll);
+        //     window.removeEventListener('resize', this.handleResize);
+        // },
+        methods: {
+            handleScroll() {
+                const currentY = window.scrollY || window.pageYOffset;
+
+            // 判断滚动方向
+            if (currentY > this.lastScrollY && currentY > 300) {
+                // 往下滚且距离顶部超过 300px 时隐藏
+                this.isHidden = true;
+            } else {
+                // 往上滚动时显示
+                this.isHidden = false;
+            }
+
+            // 保存滚动位置
+            this.lastScrollY = currentY;
+            this.scrollY = currentY;
+            },
+            handleResize() {
+                this.windowHeight = window.innerHeight;
+            },
+
+
+            submitForm() {
+            console.log('提交表单:', this.form);
+            this.$message.success('提交成功！');
+            },
+        },
+
+        };
+
+        var Ctor = Vue.extend(Main);
+        new Ctor().$mount('#app');
+    </script>
+
+
+
+
+    <script>
+        // 确保视频加载后播放
+        document.addEventListener('DOMContentLoaded', function() {
+            var video = document.getElementById('video-home');
+            video.play();
+            
+            // 处理移动设备上的自动播放限制
+            video.addEventListener('click', function() {
+                video.play();
+            });
+        });
+    </script>
+
+
+
+</body>
+</html>
