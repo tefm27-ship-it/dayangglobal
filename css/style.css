@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&family=Urbanist:wght@300;400;600;700&display=swap');
+@import url('https://fonts.loli.net/css2?family=Manrope:wght@400;600;700&family=Urbanist:wght@400;600;700&display=swap');
+
 
 body { font-family: 'Manrope', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
 h1  { font-family: 'Urbanist', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
+
+body{
+    transition: all 0.6s ease;
+}
 
 * {
     margin: 0;
@@ -63,6 +69,12 @@ a {
     outline: 0;
     border-color: #666;
 }
+
+
+
+
+
+
 
 
 
@@ -288,11 +300,18 @@ li{
 .subtitle{
     font-size: 20px;
     font-weight:600;
+    line-height: 2em;
 }
 
 .home_title{
     font-size: 55px;
     text-transform: capitalize; 
+    font-weight: 600;
+}
+.web_bigtitle{
+    font-size: 55px;
+    text-transform: capitalize; 
+    font-weight: 600;
 }
 
 .four_core .home_title{
@@ -395,6 +414,7 @@ li{
     background-repeat: no-repeat;
     margin-bottom: 50px;
 }
+
 .home_contact{
     padding-top: 20px;
     padding-bottom: 0;
@@ -487,13 +507,200 @@ li{
 
 
 
+.about_dayang{
+    padding-top: 130px;
+    padding-bottom: 160px;
+}
+
+
+.web_head{
+    padding-top: 180px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+
+.web_head ul{
+    display: flex;
+    gap: 70px;
+    font-size: 16px;
+    font-weight: 600;
+    overflow: auto;
+    padding-bottom: 20px;
+}
+
+.web_head ul li{
+    white-space: nowrap;
+}
+
+.web_bg{
+    height: 785px;
+    background-image:url(../images/about-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+.web_title{
+    font-size: 46px;
+    text-transform: capitalize; 
+}
+
+.intro_title{
+    max-width: 580px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 46px;
+}
+
+
+.article_box{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+.about_video{
+    height: 600px;
+}
+
+
+.about_footprints{
+    padding-top: 130px;
+    padding-bottom: 100px;
+}
+
+.footprints_title{
+    max-width: 1320px;
+    font-weight: 600;
+    font-size: 46px;
+}
+
+
+.historylist ul{
+    border-bottom: 1px solid #DADADA;
+}
+
+.historylist ul li{
+    border-top: 1px solid #DADADA;
+    padding: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+}
+.historylist ul .year h1{
+    font-size: 40px;
+}
+.historylist ul .event{
+    padding-left: 60px;
+    font-size: 16px;
+    font-weight: 600;
+    max-width: 900px;
+}
+
+.footprints_p{
+    margin-top: 20px; 
+    max-width: 833px;
+    font-size: 16px;
+}
 
 
 
+.about_tree{
+    height: 770px;
+    background-image:url(../images/tree.jpg);
+    background-size: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 
 
 
+.myTeam{
+    height: auto;
+    background-color: #F6F6F6;
+}
 
+.team_title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 90px;
+    padding-bottom: 70px;
+    font-weight: 600;
+}
+.team_title .web_title{
+    width: 430px;
+    font-weight: 600;
+    font-size: 46px;
+}
+.team_p{
+    font-size: 16px;
+    max-width: 730px;
+}
+
+.team_designer{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 50px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+
+.team_designer li{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.designer_image{
+    max-width: 480px;
+}
+
+
+.designer_introduce{
+    max-width: 508px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.designer_name{
+    font-size: 46px;
+    margin-top: 38px;
+    margin-bottom: 38px;
+    font-weight: 600;
+    text-transform: capitalize; 
+}
+
+.designer_introduce .subtitle{
+    font-weight: 800;
+    width: 80%;
+}
+
+.designer_introduce .designer_info{
+    font-size: 16px;
+    font-weight:400;
+    width: 100%;
+}
+
+
+.cinema{
+    background-color: black;
+    color: #9ECA9D;
+}
 
 
 
