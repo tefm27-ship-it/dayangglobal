@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,16 +17,20 @@
 
 <template>
 
-    <!-- <site-top></site-top> -->
+    <!-- <site-top @open-menu="drawer = true"></site-top> -->
 
     <div class="web_top" :class="[{ home_web_top: scrollY < windowHeight }, { hide: isHidden }]">
         <div class="logo " :class="[{ home_logo: scrollY < windowHeight }, { hide: isHidden }]">
         </div>
         <div class="menu_box">
             <div class="language">English <i class="ri-earth-line"></i></div>
-            <div class="menu_btn"><i class="ri-menu-line"></i></div>
+            <div class="menu_btn" @click="drawer = true" ><i class="ri-menu-line"></i></div>
         </div>
     </div>
+
+    <site-menu v-model="drawer"></site-menu>
+
+ 
 
     <div class="home_banner">
          <h1>Hello,<br>Dayang Global</h1>
@@ -230,6 +234,7 @@
     <!--  component  -->
     <script src="component/footer.js"></script>
     <!-- <script src="component/top.js"></script> -->
+     <script src="component/menu.js"></script>
     
     <script>
         
@@ -248,6 +253,7 @@
                     lastScrollY: 0,
                     windowHeight: window.innerHeight,
                     isHidden: false,
+                    drawer: false,
                 }
         },
 

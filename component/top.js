@@ -6,7 +6,7 @@ Vue.component('site-top', {
         </div>
         <div class="menu_box">
             <div class="language">English <i class="ri-earth-line"></i></div>
-            <div class="menu_btn"><i class="ri-menu-line"></i></div>
+            <div class="menu_btn" @click="openMenu"><i class="ri-menu-line"></i></div>
         </div>
     </div>
   `
@@ -15,7 +15,8 @@ Vue.component('site-top', {
   data() {
     return {
       lastScrollY: 0,
-      isHidden: false
+      isHidden: false,
+      drawer: false,
     };
   },
   mounted() {
@@ -27,8 +28,11 @@ Vue.component('site-top', {
   methods: {
     handleScroll() {
       const currentY = window.scrollY || window.pageYOffset;
-      this.isHidden = currentY > this.lastScrollY && currentY > 50;
+      this.isHidden = currentY > this.lastScrollY && currentY > 100;
       this.lastScrollY = currentY;
+    },
+    openMenu() {
+      this.$emit('open-menu') 
     }
   }
 
