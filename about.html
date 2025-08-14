@@ -245,9 +245,23 @@
 
             
             mounted() {
+                const video = document.getElementById('video-home');
+
                 window.addEventListener('scroll', () => {
-                    let r = document.querySelector('.about_video')?.getBoundingClientRect();
-                    document.body.classList.toggle('cinema', r && r.top < 400 && r.bottom > 300);
+                    const r = document.querySelector('.about_video')?.getBoundingClientRect();
+                    const inView = r && r.top < 500 && r.bottom > 350;
+
+                    document.body.classList.toggle('cinema', inView);
+        
+                    if (inView && video && video.paused) {
+                        video.play().catch(e => {
+                            console.warn('Play error：', e);
+                        });
+                    }
+
+                    else if (!inView && video && !video.paused) {
+                        video.pause();
+                    }
                 });
             },
 

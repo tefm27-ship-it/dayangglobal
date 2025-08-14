@@ -202,7 +202,7 @@ li{
 
 .nav_list{
     flex: auto;
-    margin-top: 23%;
+    margin-top: 21%;
 }
 
 .nav_list li{
@@ -210,6 +210,7 @@ li{
     font-weight: 800;
     line-height: 2.5em;
     transition: all 0.3s ease;
+    color: black;
 }
 .nav_list li:hover{
     font-size: 31px;
@@ -287,7 +288,7 @@ li{
 .container_box{
     max-width: 1540px;
     margin: 0 auto;
-    padding: 50px;
+    padding: 50px 90px;
 }
 .home_bg{
     background-color: #F6F6F6;
@@ -485,6 +486,7 @@ li{
     flex-direction: row;
     gap: 30px;
     align-items: center;
+    color: black;
     
 }
 .web_foot_r i{
@@ -548,13 +550,13 @@ li{
 .web_title{
     font-size: 46px;
     text-transform: capitalize; 
+    font-weight: 600;
 }
 
 .intro_title{
     max-width: 580px;
     margin-bottom: 30px;
-    font-weight: 600;
-    font-size: 46px;
+    
 }
 
 
@@ -577,9 +579,8 @@ li{
 }
 
 .footprints_title{
-    max-width: 1320px;
-    font-weight: 600;
-    font-size: 46px;
+    max-width: 1260px;
+
 }
 
 
@@ -641,8 +642,6 @@ li{
 }
 .team_title .web_title{
     width: 430px;
-    font-weight: 600;
-    font-size: 46px;
 }
 .team_p{
     font-size: 16px;
@@ -678,10 +677,8 @@ li{
     padding-bottom: 100px;
 }
 .designer_name{
-    font-size: 46px;
     margin-top: 38px;
     margin-bottom: 38px;
-    font-weight: 600;
     text-transform: capitalize; 
 }
 
