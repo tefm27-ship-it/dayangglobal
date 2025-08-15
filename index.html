@@ -6,6 +6,7 @@
     <title>Dayang Global</title>
     <link href="lib/index.css" rel="stylesheet">
     <link rel="stylesheet" href="remix/remixicon.css" />
+    <link rel="stylesheet" href="lib/swiper.min.css">
     <link href="css/style.css" rel="stylesheet">
     
 
@@ -45,7 +46,28 @@
     <div class="container_box four_core">
         <p class="subtitle">Founding and Leadership</p>
         <h1 class="home_title">Dayang International Business</h1>
-        <div class="lbox">1234</div>
+    </div>
+
+    <div class="swiper-container lbox">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide lbox_n">
+                        <div class="lbox_img" style="background-image:url(images/global-men.jpg);"></div>
+                        <div class="lbox_name">The leader in the global men's formalwear business</div>
+                    </div>
+                    <div class="swiper-slide lbox_n">
+                        <div class="lbox_img" style="background-image:url(images/benchmarks.jpg);"></div>
+                        <div class="lbox_name">Setting industry benchmarks with craftsmanship and innovation</div>
+                    </div>
+                    <div class="swiper-slide lbox_n">
+                        <div class="lbox_img" style="background-image:url(images/hli.jpg);"></div>
+                        <div class="lbox_name">A dominant player in men's custom tailoring</div>
+                    </div>
+                    <div class="swiper-slide lbox_n">
+                        <div class="lbox_img" style="background-image:url(images/1979by.jpg);"></div>
+                        <div class="lbox_name">Founded in 1979 by Ms. Li Guilian</div>
+                    </div>
+                </div>
+                <!-- <div class="swiper-scrollbar"></div> -->
     </div>
     
     <div class="container_box home_factorybox">
@@ -111,7 +133,15 @@
 
         </el-row>
     </div>
-    <div class="home_factory_image">
+    <div class="swiper-container home_factory_image">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(images/home-img1.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(images/home-img2.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(images/home-img3.jpg)"></div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
     </div>
 
     </div>
@@ -120,7 +150,8 @@
         <p class="subtitle">Global Market</p>
         <h1 class="home_title">The global market spans major regions including Asia, Europe, North America and Oceania.</h1>
     </div>
-    <div class="container_box world_image"></div>
+    <div class="container_box world_image">
+    </div>
 
     <div class="container_box">
         <p class="subtitle">Find us in the world</p>
@@ -226,6 +257,8 @@
     <!-- import vue elm-->
     <script type="text/javascript" src="lib/vue.js"></script>
     <script type="text/javascript" src="lib/index.js"></script>
+    <!-- import swiper-->
+    <script src="/lib/swiper.min.js"></script>
 
     <!--  component  -->
     <script src="component/footer.js"></script>
@@ -258,25 +291,67 @@
         mounted() {
             window.addEventListener('scroll', this.handleScroll);
             window.addEventListener('resize', this.handleResize);
+
+  
+            var swiper1 = new Swiper('.lbox', {
+                pagination: '.swiper-pagination',
+                slidesPerView: 2.8,
+                paginationClickable: true,
+                spaceBetween: 60,
+                freeMode: true,
+                // centeredSlides: true,
+                slidesOffsetBefore: 110,
+                slidesOffsetAfter: 80,
+                // scrollbar:'.swiper-scrollbar',
+                grabCursor: true,
+                // loop: true,
+                breakpoints: {
+                    2560: {
+                        slidesOffsetBefore: 270,
+                    },
+                    1920: {
+                        slidesOffsetBefore: 270,
+                        slidesPerView: 2.8,
+                        spaceBetween: 40,
+                    },
+                    1700: {
+                        slidesOffsetBefore: 110,
+                    },
+                    1280: {
+                        slidesPerView: 2,
+                        spaceBetween: 30
+                    },
+                    920: {
+                        slidesPerView: 1,
+                        spaceBetween: 30
+                    },
+                }
+            });
+            var swiper2 = new Swiper('.home_factory_image', {
+                pagination: '.swiper-pagination',
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                spaceBetween: 30,
+                effect: 'fade',
+                autoplay : 8000,
+            });
         },
         // beforeDestroy() {
         //     window.removeEventListener('scroll', this.handleScroll);
         //     window.removeEventListener('resize', this.handleResize);
         // },
+        
         methods: {
+            
             handleScroll() {
                 const currentY = window.scrollY || window.pageYOffset;
 
-            // 判断滚动方向
             if (currentY > this.lastScrollY && currentY > 300) {
-                // 往下滚且距离顶部超过 300px 时隐藏
                 this.isHidden = true;
             } else {
-                // 往上滚动时显示
                 this.isHidden = false;
             }
 
-            // 保存滚动位置
             this.lastScrollY = currentY;
             this.scrollY = currentY;
             },
@@ -286,8 +361,8 @@
 
 
             submitForm() {
-            console.log('提交表单:', this.form);
-            this.$message.success('提交成功！');
+            console.log('Submit Form:', this.form);
+            this.$message.success('success');
             },
         },
 
@@ -301,7 +376,6 @@
 
 
     <script>
-        // 确保视频加载后播放
         document.addEventListener('DOMContentLoaded', function() {
             var video = document.getElementById('video-home');
             video.play();
