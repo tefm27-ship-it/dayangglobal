@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dayang Global</title>
+    <link href="lib/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="remix/remixicon.css" />
+    <link href="css/style.css" rel="stylesheet">
+    
+
+</head>
+<body class="">
+<div id="app" class="" style="height: 100%;position: relative;">
+
+
+<template>
+
+    <site-top @open-menu="drawer = true"></site-top>
+    <site-menu v-model="drawer"></site-menu>
+
+    <div class="container_box web_head">
+        <h1 class="web_bigtitle">The world factory is here</h1>
+        <ul>
+            <li>Factories & Production Capacity</li>
+            <li>Quality System</li>
+        </ul>
+    </div>
+
+    <div class="web_bg" style="background-image:url(images/FactoryBG.jpg);"></div>
+
+
+
+
+    
+
+ 
+
+
+
+
+    <site-footer></site-footer>
+
+
+
+    
+
+  
+
+
+
+
+    
+
+    
+
+
+</template>  
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- import jquery-->
+    <script type="text/javascript" src="lib/jquery-3.6.0.min.js"></script>
+    <!-- import vue elm-->
+    <script type="text/javascript" src="lib/vue.js"></script>
+    <script type="text/javascript" src="lib/index.js"></script>
+
+
+    <!--  component  -->
+    <script src="component/footer.js"></script>
+    <script src="component/top.js"></script>
+     <script src="component/menu.js"></script>
+    
+    <script>
+        
+        var Main = {
+                data() {
+                    return {
+                        drawer: false,
+                    }
+            },
+
+            mounted() {
+
+                const track = document.getElementById("track");
+                const wrapper = document.getElementById("wrapper");
+
+                track.innerHTML += track.innerHTML;
+
+                let pos = 0;
+                let speed = 1; // 滚动速度
+                let paused = false;
+
+                const totalWidth = track.scrollWidth / 2; 
+
+                function animate() {
+                if (!paused) {
+                    pos -= speed;
+                    if (-pos >= totalWidth) pos = 0;
+                    track.style.transform = `translateX(${pos}px)`;
+                }
+                requestAnimationFrame(animate);
+                }
+
+                window.addEventListener("DOMContentLoaded", animate);
+
+                wrapper.addEventListener("mouseenter", () => { paused = true; });
+                wrapper.addEventListener("mouseleave", () => { paused = false; });
+                
+            },
+
+            methods: {
+            },
+
+        };
+
+        var Ctor = Vue.extend(Main);
+        new Ctor().$mount('#app');
+    </script>
+
+
+
+
+
+</body>
+</html>

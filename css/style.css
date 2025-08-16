@@ -105,7 +105,7 @@ li{
     background-color: rgba(255, 255, 255, 1);
     display: flex;
     justify-content: space-between;
-    padding-left: 50px;
+    padding-left: 60px;
     padding-right: 10px;
     align-items: center;
     color: black;
@@ -578,11 +578,11 @@ li{
 
 .web_head{
     padding-top: 180px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    gap: 15px;
+    gap: 25px;
 }
 
 
@@ -601,7 +601,7 @@ li{
 
 .web_bg{
     height: 785px;
-    background-image:url(../images/about-bg.jpg);
+    
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -749,8 +749,8 @@ li{
 .historylist ul li{
     border-top: 1px solid #DADADA;
     padding: 40px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 45px;
+    padding-bottom: 45px;
     display: flex;
     align-items: center;
     flex-direction: row;
