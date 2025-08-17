@@ -858,6 +858,35 @@ li{
 }
 
 
+.factory_data_t{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.factory_data_t ul li{
+    float: left;
+    margin-right: 70px;
+}
+
+.factory_data_t ul li h1{
+    font-size: 46px;
+}
+
+.factory_data_t ul li p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
 
 
 
