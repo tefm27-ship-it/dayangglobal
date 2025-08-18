@@ -37,7 +37,7 @@
                 <p class="subtitle">About dayang</p>
                 <h1 class="web_title intro_title">Setting industry benchmarks with craftsmanship and innovation</h1>
             </el-col>
-            <el-col :sm="11" :xs="24">
+            <el-col :sm="12" :xs="24">
                 <div class="article_box">
                     <p>Dayang Group Co., Ltd. was established in September 1979 and is one of the most internationally competitive men's clothing enterprises in China. The group has 24 subsidiaries with an annual production capacity of over ten million sets of suits
                     <br><br>Dayang Group is renowned in the industry for its "highest quality men's clothing made in China" and has successfully developed an intelligent ordering platform to serve global customers. Its professional men's clothing manufacturing technology has been widely recognized internationally
@@ -53,7 +53,16 @@
  
 
     <div class="about_video">
-    <video autoplay muted loop id="video-home" oncontextmenu="return false;">
+    <video id="video-home"
+        autoplay
+        muted
+        loop
+        playsinline
+        webkit-playsinline
+        x5-video-player-type="h5"
+        x5-video-player-fullscreen="false"
+        x5-video-orientation="portrait"
+        oncontextmenu="return false">
         <source src="video/40v.webm" type="video/webm">
         <source src="video/40v.mp4" type="video/mp4">
     </video>

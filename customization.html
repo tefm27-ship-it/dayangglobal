@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dayang Global</title>
+    <link href="lib/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="remix/remixicon.css" />
+    <link href="css/style.css" rel="stylesheet">
+    
+
+</head>
+<body class="">
+<div id="app" class="" style="height: 100%;position: relative;">
+
+
+<template>
+
+    <site-top @open-menu="drawer = true"></site-top>
+    <site-menu v-model="drawer"></site-menu>
+
+    <div class="container_box web_head">
+        <h1 class="web_bigtitle">Personalized customization</h1>
+        <ul>
+            <li>Making Personalized</li>
+            <li>Fully Customization</li>
+            <li>Distinctions</li>
+        </ul>
+    </div>
+
+    <div class="web_bg customization_video">
+        <video id="video-home"
+        autoplay
+        muted
+        loop
+        playsinline
+        webkit-playsinline
+        x5-video-player-type="h5"
+        x5-video-player-fullscreen="false"
+        x5-video-orientation="portrait"
+        oncontextmenu="return false">
+        <!-- <source src="video/pv.webm" type="video/webm"> -->
+        <source src="video/pv.mp4" type="video/mp4">
+        </video>
+        <div class="customization_billboard">
+            <h2>Right now, </h2>
+            <h1>Double Life</h1>
+        </div>
+    </div>
+
+    <div class="container_box immersive">
+        <h1 class="web_title">Immersive Fun Making <br> Personalized</h1>
+        <ul>
+            <h2>Custom styles with tailored features, unique linings, and personalized measurements for repeat orders.</h2>
+            <li>Custom Patterns</li>
+            <li>Measurement Profiles for Repeat Orders</li>
+            <li>Personal Style Options</li>
+            <li>Tailored Features</li>
+            <li>Unique Lining Designs</li>
+        </ul>
+    </div>
+
+    <div class="container_box immersive_photo">
+        <img src="images/immersive-img.jpg" width="80%" alt="">
+        <p>Custom styles with tailored features, unique linings, and personalized measurements for repeat orders.</p>
+    </div>
+
+
+    <div class="fully_bg">
+        <div class="container_box fully_title">
+            <p class="subtitle">Fully Customization</p>
+            <h2 class="web_title ">
+                Your style, your rules: limitless design options for truly one-of-a-kind suits. Each garment is precision tailored by skilled artisans with an obsessive attention to detail.
+            </h2>
+        </div>
+        <div class="container_box fully_image">
+            <el-row :gutter="60" style="display: flex;flex-direction: row;flex-wrap: wrap;row-gap: 60px;">
+                <el-col :md="8" :sm="12" :xs="12">
+                    <img src="images/fully_image37.jpg" width="100%" alt="">
+                </el-col>
+                <el-col :md="8" :sm="12" :xs="12">
+                    <img src="images/fully_image38.jpg" width="100%" alt="">
+                </el-col>
+                <el-col :md="8" :sm="12" :xs="12" >
+                    <img src="images/fully_image40.jpg" width="100%" alt="">
+                </el-col>
+                <el-col :md="8" :sm="12" :xs="12" >
+                    <img src="images/fully_image42.jpg" width="100%" alt="">
+                </el-col>
+                <el-col :md="8" :sm="12" :xs="12" >
+                    <img src="images/fully_image41.jpg" width="100%" alt="">
+                </el-col>
+                <el-col :md="8" :sm="12" :xs="12" >
+                    <img src="images/fully_image39.jpg" width="100%" alt="">
+                </el-col>
+            </el-row>
+        </div>
+        <div class="container_box distinctions">
+        <h1 class="web_title">Distinctions</h1>
+        <ul>
+            <li>
+                <h4>Dependable and Fast: </h4>
+                <p>prompt, reliable delivery.</p>
+            </li>
+            <li>
+                <h4>Strategic Partners for Success: </h4>
+                <p>forging win-win alliances over the long term.</p>
+            </li>
+            <li>
+                <h4>High-Value Quality: </h4>
+                <p>premium products at competitive prices.</p>
+            </li>
+            <li>
+                <h4>Global Leader: </h4>
+                <p>ranking top in the global tailoring industry.</p>
+            </li>
+            <li>
+                <h4>Tech Meets Craft: </h4>
+                <p>merging traditional skills with AI precision.</p>
+            </li>
+            <li>
+                <h4>Great Comfort: </h4>
+                <p>engineered for a supremely comfortable fit.</p>
+            </li>
+        </ul>
+        </div>
+    </div>
+
+    <div class="customization_bg" style="background-image:url(images/trands-bg.jpg);"></div>
+
+ 
+
+    
+
+
+    
+
+    <site-footer></site-footer>
+
+
+
+
+    
+
+  
+
+
+
+
+    
+
+    
+
+
+</template>  
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- import jquery-->
+    <script type="text/javascript" src="lib/jquery-3.6.0.min.js"></script>
+    <!-- import vue elm-->
+    <script type="text/javascript" src="lib/vue.js"></script>
+    <script type="text/javascript" src="lib/index.js"></script>
+
+    <!--  component  -->
+    <script src="component/footer.js"></script>
+    <script src="component/top.js"></script>
+     <script src="component/menu.js"></script>
+    
+    <script>
+        
+        var Main = {
+                data() {
+                    return {
+                        drawer: false,
+                    }
+            },
+
+
+            
+            mounted() {
+                
+            },
+
+            methods: {
+            },
+
+        };
+
+        var Ctor = Vue.extend(Main);
+        new Ctor().$mount('#app');
+    </script>
+
+
+    
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var video = document.getElementById('video-home');
+            video.play();
+            
+            video.addEventListener('click', function() {
+                video.play();
+            });
+        });
+    </script>
+
+
+
+</body>
+</html>
