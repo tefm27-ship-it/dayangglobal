@@ -22,10 +22,10 @@
     <div class="container_box web_head">
         <h1 class="web_bigtitle">About Us</h1>
         <ul>
-            <li>About dayang</li>
-            <li>Footprints</li>
-            <li>Core capabilities</li>
-            <li>International Creative Team</li>
+            <li @click="scrollTo('point-About')">About dayang</a></li>
+            <li @click="scrollTo('point-footprints')">Footprints</li>
+            <li @click="scrollTo('point-core')">Core capabilities</li>
+            <li @click="scrollTo('point-team')">International Creative Team</li>
         </ul>
     </div>
 
@@ -34,7 +34,7 @@
     <div class="container_box about_dayang">
         <el-row>
             <el-col :sm="12" :xs="24">
-                <p class="subtitle">About dayang</p>
+                <p class="subtitle" ref="point-About">About dayang</p>
                 <h1 class="web_title intro_title">Setting industry benchmarks with craftsmanship and innovation</h1>
             </el-col>
             <el-col :sm="12" :xs="24">
@@ -70,7 +70,7 @@
 
 
 
-    <div class="container_box about_footprints">
+    <div class="container_box about_footprints" ref="point-footprints">
         <p class="subtitle">Footprints</p>
         <h1 class="web_title footprints_title">
             Dayang Group, founded in 1979 in Dalian, evolved from garment production to a global menswear leader, launching "TRANDS" brand in the 1990s and pioneering smart manufacturing in the 21st century.
@@ -124,7 +124,7 @@
     </div>
 
 
-    <div class="container_box core_capabilities">
+    <div class="container_box core_capabilities" ref="point-core">
         <h1 class="web_title footprints_title">Core Capabilities</h1>
         <p class="subtitle footprints_p">
             A leader in MTM and RTW production, Dayang Group delivers brand-focused apparel through tech-driven factories, continuous innovation, and dedicated craftsmanship in both formal and casual wear.
@@ -133,7 +133,7 @@
 
     <div class="container_box about_tree"></div>
 
-    <div class="myTeam">
+    <div class="myTeam" ref="point-team">
         <div class="container_box team_title">
             <h1 class="web_title">International <br> Creative Team</h1>
             <p class="subtitle team_p">
@@ -217,8 +217,6 @@
 
 
 
-
-
     <!-- import jquery-->
     <script type="text/javascript" src="lib/jquery-3.6.0.min.js"></script>
     <!-- import vue elm-->
@@ -263,6 +261,14 @@
             },
 
             methods: {
+                scrollTo(refName) {
+                    const element = this.$refs[refName];
+                    if (element) {
+                        element.scrollIntoView({
+                        behavior: 'smooth'
+                        });
+                    }
+                }
             },
 
         };
