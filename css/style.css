@@ -312,12 +312,12 @@ li{
 }
 
 .home_title{
-    font-size: 55px;
+    font-size: 56px;
     text-transform: capitalize; 
     font-weight: 600;
 }
 .web_bigtitle{
-    font-size: 55px;
+    font-size: 56px;
     text-transform: capitalize; 
     font-weight: 600;
 }
@@ -693,9 +693,11 @@ li{
 .world_data ul li{
     text-align: center;
 }
-.world_data ul li h1{
-    font-size: 38px;
-    font-weight: 600;
+.factory_data_t_r h1{
+    font-weight: 800;
+}
+.factory_data_t_r li div{
+    height: 25px;
 }
 
 
@@ -704,9 +706,8 @@ li{
 
 
 
-
 .web_title{
-    font-size: 46px;
+    font-size: 50px;
     text-transform: capitalize; 
     font-weight: 600;
 }
@@ -863,6 +864,14 @@ li{
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.factory_data_t_l{
+    padding-bottom: 50px;
+}
+.factory_data_t_r{
+    padding-bottom: 50px;
 }
 
 .factory_data_t ul li{
@@ -880,16 +889,120 @@ li{
 }
 
 
+.factory_pt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 90px;
+}
 
 
+.factory_pt_r{
+    width: 100%;
+    max-width: 700px;
+}
+
+.factory_pt_r img{
+    margin-top: 17px;
+    margin-bottom: 17px;
+    width: 100%;
+}
+
+.factory_pt_l .web_title{
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.factory_pt_l ul{
+    
+}
+.factory_pt_l ul p{
+    max-width: 360px;
+    margin-bottom: 100px;
+    font-weight: 600;
+    
+}
 
 
+.factory_notice{
+    border-top: 1px solid #DADADA;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.factory_notice h2{
+    font-weight: 600;
+    font-size: 35px;
+    margin-top: 30px;
+}
+
+.factory_listbox{
+    padding-bottom: 150px;
+}
+
+.factory_list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
 
 
+.factory_list_name{
+    font-weight: 600;
+    padding-bottom: 20px;
+    max-width: 400px;
+}
+.factory_list_name p{
+    margin-top: 10px;
+}
 
 
+.factory_list_photo{
+    max-height:370px ;
+    
+}
+.factory_list_photo img{
+    width: 100%;
+}
 
 
+.quality{
+    border-top: 1px solid #DADADA;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 120px;
+    padding-bottom: 150px;
+}
+.quality .web_title{
+}
+.quality ul {
+    max-width: 780px;
+}
+.quality ul h2{
+    font-size: 32px;
+    font-weight: 600;
+}
+.quality ul img{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.quality ul li{
+    font-weight: 600;
+    list-style:disc;
+    line-height: 3em;
+}
+
+.attestation{
+    padding-bottom: 130px;
+}
+
+.attestation_n{
+    padding: 50px;
+    border: 1px solid #dadada;
+}
 
 
 
