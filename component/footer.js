@@ -1,10 +1,10 @@
 // 定义全局组件
 Vue.component('site-footer', {
   template: `
-  <el-backtop :visibility-height="600" :right="50" :bottom="130">
-    <div class="web-backtop"><i class="ri-arrow-up-line"></i></div>
-  </el-backtop>
     <div class="web_foot">
+      <el-backtop :visibility-height="600" :right="50" :bottom="130">
+        <div class="web-backtop"><i class="ri-arrow-up-line"></i></div>
+      </el-backtop>
       <div class="web_foot_l">
         <p>© 2025 dayang All Right Reserved</p>
         <p>
