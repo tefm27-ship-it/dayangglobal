@@ -19,7 +19,7 @@
 
     <!-- <site-top @open-menu="drawer = true"></site-top> -->
 
-    <div class="web_top" :class="[{ home_web_top: scrollY < windowHeight }, { hide: isHidden }]">
+    <div class="web_top"  :class="[{ home_web_top: scrollY < windowHeight }, { hide: isHidden }]">
         <div class="logo " :class="[{ home_logo: scrollY < windowHeight }, { hide: isHidden }]">
         </div>
         <div class="menu_box">
@@ -317,10 +317,11 @@
                 breakpoints: {
                     2560: {
                         slidesOffsetBefore: 270,
+                        slidesPerView: 2.8,
                     },
                     1920: {
                         slidesOffsetBefore: 270,
-                        slidesPerView: 2.3,
+                        slidesPerView: 2.5,
                         spaceBetween: 40,
                     },
                     1700: {
@@ -393,6 +394,12 @@
             video.addEventListener('click', function() {
                 video.play();
             });
+        });
+
+        $('.web_top').click(function(event) {
+            if (event.target === this) {
+                $('html, body').animate({ scrollTop: 0 }, 500);
+            }
         });
     </script>
 

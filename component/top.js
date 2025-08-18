@@ -21,6 +21,13 @@ Vue.component('site-top', {
   },
   mounted() {
     window.addEventListener('scroll', this.handleScroll);
+
+    $('.web_top').click(function (event) {
+      if (event.target === this) {
+        $('html, body').animate({ scrollTop: 0 }, 500);
+      }
+    });
+    
   },
   beforeDestroy() {
     window.removeEventListener('scroll', this.handleScroll);
@@ -37,6 +44,9 @@ Vue.component('site-top', {
   }
 
 });
+
+
+
 
 
 

@@ -241,6 +241,25 @@ li{
 
 
 
+.el-backtop{
+    width: 50px;
+    height: 50px;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.el-backtop:hover {
+    background-color: #9A3133;
+}
+.web-backtop {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border-radius: 2px;
+    line-height: 2.4;
+    color:white;
+}
+
+
 
 
 
