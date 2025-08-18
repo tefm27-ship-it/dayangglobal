@@ -20,8 +20,9 @@
     <!-- <site-top @open-menu="drawer = true"></site-top> -->
 
     <div class="web_top"  :class="[{ home_web_top: scrollY < windowHeight }, { hide: isHidden }]">
-        <div class="logo " :class="[{ home_logo: scrollY < windowHeight }, { hide: isHidden }]">
-        </div>
+        <a href="index.html">
+        <div class="logo " :class="[{ home_logo: scrollY < windowHeight }, { hide: isHidden }]"></div>
+        </a>
         <div class="menu_box">
             <div class="language">English <i class="ri-earth-line"></i></div>
             <div class="menu_btn" @click="drawer = true" ><i class="ri-menu-line"></i></div>

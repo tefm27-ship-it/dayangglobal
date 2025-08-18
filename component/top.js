@@ -2,8 +2,9 @@
 Vue.component('site-top', {
   template: `
     <div class="web_top" :class="{ hide: isHidden }">
-        <div class="logo" >
-        </div>
+        <a href="index.html">
+            <div class="logo" ></div>
+        </a>
         <div class="menu_box">
             <div class="language">English <i class="ri-earth-line"></i></div>
             <div class="menu_btn" @click="openMenu"><i class="ri-menu-line"></i></div>

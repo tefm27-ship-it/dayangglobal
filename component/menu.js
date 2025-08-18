@@ -14,11 +14,11 @@ Vue.component('site-menu', {
             <div class="nav_close" @click="closeDrawer"><i class="ri-close-line"></i></div>
           </div>
           <ul class="nav_list">
-            <li>About Us</li>
-            <li>Global Partners</li>
-            <li>The World Factory Is Here</li>
-            <li>Numbers & Future</li>
-            <li>Personalized Customization</li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="globalmarket.html">Global Partners</a></li>
+              <li><a href="factory.html">The World Factory Is Here</a></li>
+              <li><a href=""></a>Numbers & Future</li>
+              <li><a href="customization.html">Personalized Customization</a></li>
           </ul>
           <div class="nav_bottom">
             <div class="web_foot_r">
