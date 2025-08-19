@@ -17,7 +17,7 @@ Vue.component('site-menu', {
               <li><a href="about.html">About Us</a></li>
               <li><a href="globalmarket.html">Global Partners</a></li>
               <li><a href="factory.html">The World Factory Is Here</a></li>
-              <li><a href=""></a>Numbers & Future</li>
+              <li><a href="intelligent.html">Numbers & Future</a></li>
               <li><a href="customization.html">Personalized Customization</a></li>
           </ul>
           <div class="nav_bottom">

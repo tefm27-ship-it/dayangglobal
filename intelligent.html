@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dayang Global</title>
+    <link href="lib/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="remix/remixicon.css" />
+    <link rel="stylesheet" href="lib/swiper.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    
+
+</head>
+<body class="">
+<div id="app" class="" style="height: 100%;position: relative;">
+
+
+<template>
+
+    <site-top @open-top="drawer = true"></site-top>
+    <site-menu v-model="drawer"></site-menu>
+
+   
+
+    <div class="gradient_bg">
+        <div class="intelligent_banner">
+            <div class="animation_d"></div>
+            <div class="intelligent_billboard ">
+                <h1>Full Systematization.</h1>
+                <h1>The Future Is Now.</h1>
+                <ul>
+                    <li>Full-Systematization</li>
+                    <li>Future Concept</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container_box intelligent_box">
+            <div class="intelligent_title">
+                <h1>Ustyylit System </h1>
+                <p>USTYYLIT is an online platform for custom apparel brands, connecting design, fabric selection, and production in one streamlined workflow.</p>
+            </div>
+            <div class="ustyylit ustyylit_n1">
+                <div class="ustyylit_introduce">
+                    <ul>
+                        <img src="images/to.png" alt="">
+                        <li>
+                            <h3>Full-Process Digital Management</h3>
+                            <p>Integrated design to production for higher efficiency and fewer errors.</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <img src="images/to.png" alt="">
+                        <li>
+                            <h3>3D Visualization</h3>
+                            <p>Real-time 3D preview of styles and fabrics.</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <img src="images/to.png" alt="">
+                        <li>
+                            <h3>Full-Process Digital Management</h3>
+                            <p>Remote style selection and customization.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ustyylit_image"><img src="images/u31.png" width="100%" alt=""></div>
+            </div>
+            <div class="ustyylit ustyylit_n2">
+                <div class="ustyylit_introduce">
+                    <ul>
+                        <img src="images/to.png" alt="">
+                        <li>
+                            <h3>Fast Factory Ordering</h3>
+                            <p>Direct order submission to production line.</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <img src="images/to.png" alt="">
+                        <li>
+                            <h3>Flexible Customization</h3>
+                            <p>Various styles, fabrics, and accessories options.</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <img src="images/to.png" alt="">
+                        <li>
+                            <h3>Data-Driven Decisions</h3>
+                            <p>Optimized design and production with big data.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ustyylit_image"><img src="images/u32.png" width="100%" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="gradient_bg2">
+        <div class="container_box intelligent_box">
+            <div class="intelligent_title lining_title">
+                    <h1>Ustyylit System </h1>
+                    <p>USTYYLIT is an online platform for custom apparel brands, connecting design, fabric selection, and production in one streamlined workflow.</p>
+            </div>
+            <div class="customlining customlining_n1">
+                <div class="customlining_image"><img src="images/Lining1.png" width="100%" alt=""></div>
+                <ul class="customlining_introduce">
+                    <li>
+                        <h3>Personalized Pattern Design</h3>
+                        <p>Allows uploading custom patterns to create unique lining styles.</p>
+                    </li>
+                    <li>
+                        <h3>Easy-to-Use Design Tools</h3>
+                        <p>No professional design skills needed; easily crop, scale, and arrange patterns.</p>
+                    </li>
+                    <li>
+                        <h3>Real-Time Preview</h3>
+                        <p>Instantly preview lining designs to ensure expectations are met.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="customlining customlining_n2">
+                <div class="customlining_image"><img src="images/Lining2.png" width="100%" alt=""></div>
+                <ul class="customlining_introduce">
+                    <li>
+                        <h3>Enhances Brand Identity</h3>
+                        <p>Custom linings enhance garment uniqueness and strengthen brand image.</p>
+                    </li>
+                    <li>
+                        <h3>Fast Feedback and Revision</h3>
+                        <p>Professional designers provide feedback within 24-48 hours after upload.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container_box new3d_title">
+            <h1>3D Visualization</h1>
+            <p>A 3D customization platform for fashion brands — enabling remote style selection, real-time fabric preview, and direct ordering to production.</p>
+        </div>
+
+        <div class="swiper-container new3d_swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide new3d_n">
+                <div class="img-box">
+                    <img src="images/new3d-img1.jpg" width="100%"  alt="">
+                </div>
+            </div>
+            <div class="swiper-slide new3d_n">
+                <div class="img-box">
+                    <img src="images/new3d-img2.jpg" width="100%" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide new3d_n">
+                <div class="img-box">
+                    <img src="images/new3d-img3.jpg" width="100%" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="container_box new3dbtn">
+            <img src="images/new3d-btn.png" width="100%" alt="">
+        </div>
+        <div class="container_box new3d_img">
+            <img src="images/new3d-gif.gif" width="100%" alt="">
+            <img src="images/new3dyc.jpg" width="100%" alt="">
+        </div>
+        <div class="container_box new3dbtn" style="padding-top: 50px;">
+            <h1>3D customization: design, preview, and create with ease.</h1>
+        </div>
+
+        <div class="container_box new3d_fine">
+        <el-row :gutter="30">
+            <el-col :sm="8" :xs="24">
+                <div class="new3d_fine_n">
+                    <i class="ri-box-3-fill" style="color: #6F71F8;"></i>
+                    <p>3D Fitting & Real-Time Preview</p>
+                </div>
+            </el-col>
+            <el-col :sm="8" :xs="24">
+                <div class="new3d_fine_n">
+                    <i class="ri-pencil-ruler-2-fill" style="color: #E08E00;"></i>
+                    <p>Personalized Custom Design</p>
+                </div>
+            </el-col>
+            <el-col :sm="8" :xs="24">
+                <div class="new3d_fine_n">
+                    <i class="ri-survey-fill" style="color: #2CA864;"></i>
+                    <p>Direct Save to Production Order</p>
+                </div>
+            </el-col>
+        </el-row>
+        </div>
+
+    </div>
+    
+
+
+
+
+   
+
+    
+
+
+    <site-footer></site-footer>
+  
+
+
+    
+
+  
+
+
+
+
+    
+
+    
+
+
+</template>  
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- import jquery-->
+    <script type="text/javascript" src="lib/jquery-3.6.0.min.js"></script>
+    <!-- import vue elm-->
+    <script type="text/javascript" src="lib/vue.js"></script>
+    <script type="text/javascript" src="lib/index.js"></script>
+    <!-- import swiper-->
+    <script src="lib/swiper.min.js"></script>
+
+
+    <!--  component  -->
+    <script src="component/footer.js"></script>
+    <script src="component/top.js"></script>
+     <script src="component/menu.js"></script>
+    
+    <script>
+        
+        var Main = {
+                data() {
+                    return {
+                        drawer: false,
+                    }
+            },
+
+            mounted() {
+                const swiper = new Swiper('.swiper-container', {
+                    slidesPerView: 2.3,
+                    spaceBetween: 30,
+                    centeredSlides: true,
+                    loop: true,
+                    loopedSlides: 10, // 一般 >= 你真实的 slide 数
+                    initialSlide: 1,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true
+                    }
+                });
+
+                // 监听点击 slide
+                swiper.on('click', function (swiper, e) {
+                    if (swiper.clickedIndex !== undefined) {
+                        swiper.slideTo(swiper.clickedIndex); // 把点击的 slide 移到中间
+                    }
+                });
+            },
+
+            methods: {
+            },
+
+        };
+
+        var Ctor = Vue.extend(Main);
+        new Ctor().$mount('#app');
+    </script>
+
+
+
+
+
+</body>
+</html>
