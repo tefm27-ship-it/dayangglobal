@@ -686,12 +686,15 @@ li{
     overflow: hidden;
     padding-top:140px;
     height: 1025px;
+    white-space: nowrap;
+    
 }
 
 .conveyor-track {
     display: flex;
     white-space: nowrap;
     height: 100%;
+    will-change: transform;
 }
 .item {
     min-width: 590px;
@@ -1183,6 +1186,35 @@ li{
 
 .distinctions ul{
     flex-basis: 400px;
+}
+
+.ai_soon{
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 130px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ai_soon .web_title{
+    padding-bottom: 40px;
+}
+
+.ai_soon ul li h4{
+    font-size: 20px;
+    line-height: 1.8em;
+}
+.ai_soon ul li p{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.ai_soon ul li{
+    margin-bottom: 70px;
+}
+
+.ai_soon ul{
+    flex-basis: 460px;
 }
 
 
@@ -1695,6 +1727,16 @@ li{
     .web_bg {
         height: 600px;
     }
+    .about_tree{
+        height: 650px;
+    }
+    .designer_image{
+        max-width: 370px;
+    }
+    
+    .team_designer{
+        padding-top: 0;
+    }
 }
 
 
@@ -1764,19 +1806,24 @@ li{
         height: 520px;
     }
     .designer_image{
-        max-width: 370px;
+        max-width: 320px;
     }
     .designer_introduce{
-        max-width: 368px;
+        max-width: 328px;
+        padding-top:0;
     }
     .team_designer{
         padding-top: 0;
+    }
+    .team_designer li {
+        align-items: flex-start;
+        margin-bottom:10px;
     }
     .about_video {
         height: 270px;
     }
     .about_tree{
-        background-size: 80%;
+        background-size: 90%;
     }
     .web_bg {
         height: 420px;

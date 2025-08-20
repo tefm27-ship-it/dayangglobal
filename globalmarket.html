@@ -33,15 +33,15 @@
         <div class="webgm_bg_r"></div>
     </div>
 
-    <div class="conveyor-wrapper" id="wrapper" ref="point-Partners">
+    <div class="conveyor-wrapper" id="wrapper" >
     <div class="conveyor-track" id="track">
-        <div class="item" style="background-image:url(../images/m1.jpg);"></div>
-        <div class="item" style="background-image:url(../images/m2.jpg);"></div>
-        <div class="item" style="background-image:url(../images/m3.jpg);"></div>
+        <div class="item pause-on-hover"  style="background-image:url(../images/m1.jpg);"></div>
+        <div class="item pause-on-hover"  style="background-image:url(../images/m2.jpg);"></div>
+        <div class="item pause-on-hover" style="background-image:url(../images/m3.jpg);"></div>
     </div>
     </div>
 
-    <div class="container_box about_footprints">
+    <div class="container_box about_footprints" ref="point-Partners">
         <h1 class="web_title footprints_title">
             Partnering with 100+ top brands worldwide to deliver premium products. Rigorous standards, innovative craftsmanship, and international certifications ensure excellence for global consumers.
         </h1>
@@ -211,33 +211,36 @@
             },
 
             mounted() {
-
                 const track = document.getElementById("track");
                 const wrapper = document.getElementById("wrapper");
 
                 track.innerHTML += track.innerHTML;
 
                 let pos = 0;
-                let speed = 1; // 滚动速度
+                let speed = 1;
                 let paused = false;
-
-                const totalWidth = track.scrollWidth / 2; 
+                let totalWidth = 0;
 
                 function animate() {
-                if (!paused) {
-                    pos -= speed;
-                    if (-pos >= totalWidth) pos = 0;
-                    track.style.transform = `translateX(${pos}px)`;
-                }
-                requestAnimationFrame(animate);
+                    if (!paused) {
+                        pos -= speed;
+                        if (-pos >= totalWidth) pos = 0;
+                        track.style.transform = `translateX(${pos}px)`;
+                    }
+                    requestAnimationFrame(animate);
                 }
 
-                window.addEventListener("DOMContentLoaded", animate);
+                requestAnimationFrame(() => {
+                    totalWidth = track.scrollWidth / 2;
+                    animate();
+                });
 
-                wrapper.addEventListener("mouseenter", () => { paused = true; });
-                wrapper.addEventListener("mouseleave", () => { paused = false; });
-                
+                document.querySelectorAll(".pause-on-hover").forEach(el => {
+                    el.addEventListener("mouseenter", () => { paused = true; });
+                    el.addEventListener("mouseleave", () => { paused = false; });
+                });
             },
+
 
             methods: {
                 scrollTo(refName) {
