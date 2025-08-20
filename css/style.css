@@ -187,6 +187,7 @@ li{
 .nav_box{
     padding-left: 100px;
     box-shadow: none;
+    width: auto;
 }
 
 .nav_flex{
@@ -366,12 +367,12 @@ li{
 
 
 .lbox{
-    height: 570px;
+    /* height: 570px; */
     max-width: 1920px;
 }
 
 .lbox_n{
-    height: 580px;
+    /* height: 580px; */
     margin-right: 50px;
 }
 
@@ -398,7 +399,7 @@ li{
 
 .home_factorybox{
     padding-bottom: 100px;
-    padding-top: 130px;
+    padding-top: 200px;
 }
 
 .home_factory_titlebox .home_title{
@@ -780,7 +781,7 @@ li{
 
 
 .about_video{
-    height: 600px;
+    height: 500px;
 }
 
 
@@ -1198,6 +1199,7 @@ li{
 
 .gradient_bg{
     background: linear-gradient( 180deg, #FAF5F5 0%, rgba(250,245,245,0.5) 80%, #FFFFFF 100%);
+    border-top: 1px solid #DADADA;
   
 }
 
@@ -1205,7 +1207,6 @@ li{
     height: 880px;
     background-color: #FAF5F5 ;
     max-width: 1800px;
-    border-bottom: 1px solid #DADADA;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1345,6 +1346,7 @@ li{
 
 .gradient_bg2{
     background: linear-gradient( 180deg, #FAFAFA 0%, #E5E8E8 61%, #E9E7E4 100%);
+    
     
 }
 
@@ -1633,6 +1635,12 @@ li{
 
 
 
+
+
+
+
+
+
 @media (max-width:1440px) {
     .ustyylit_introduce{
         max-width: 360px;
@@ -1643,6 +1651,9 @@ li{
     .immersive ul{
         max-width: 520px;
     }
+    .team_designer li{
+        justify-content: space-around;
+    }
     .customlining_n1 .customlining_introduce{
         margin-right: 70px;
     }
@@ -1650,6 +1661,12 @@ li{
         height: 700px;
         background-size: 90%;
         background-position: center bottom;
+    }
+    .about_video {
+        height: 380px;
+    }
+    .web_bg{
+        height: 700px;
     }
 }
 
@@ -1663,16 +1680,34 @@ li{
     .customlining_n2 .customlining_introduce{
         margin-left: 0;
     }
-    .team_designer li{
-        justify-content: space-around;
-    }
     .home_factory_titlebox .home_title{
         max-width: 700px;
     }
     .immersive ul{
         max-width: 420px;
     }
+    .home_factory_subtitle{
+        gap: inherit;
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    .web_bg {
+        height: 600px;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width:1024px) {
     .container_box{
@@ -1691,6 +1726,81 @@ li{
     .web_head ul{
         gap: 30px;
     }
+
+    .home_banner h1{
+        font-size: 88px;
+    }
+
+    .four_core{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .home_factory_titlebox{
+        margin-bottom: 150px;
+    }
+    .home_factory_image{
+        height: 480px;
+    }
+    .lbox_img{
+        height: 350px;
+    }
+    .home_factorybox{
+        padding-top: 170px;
+    }
+    .home_market{
+        padding-top: 50px;
+    }
+    .world_image{
+        height: 560px;
+        background-size: 120%;
+        margin-bottom: 0;
+    }
+    .nav_box{
+        padding-left: 80px;
+        width: 60% !important;
+    }
+    .about_tree{
+        height: 520px;
+    }
+    .designer_image{
+        max-width: 370px;
+    }
+    .designer_introduce{
+        max-width: 368px;
+    }
+    .team_designer{
+        padding-top: 0;
+    }
+    .about_video {
+        height: 270px;
+    }
+    .about_tree{
+        background-size: 80%;
+    }
+    .web_bg {
+        height: 420px;
+    }
+    .article_box{
+        padding-left: 0;
+    }
+    
+    .intro_title{
+        max-width: 100%;
+    }
+    .about_dayang {
+        padding-top: 70px;
+        padding-bottom: 90px;
+    }
+    .about_footprints {
+        padding-top: 70px;
+        padding-bottom: 60px;
+    }
+    .web_top{
+        padding-left: 40px;
+    }
+    
+    
+    
 }
 
 @media (max-width:768px) {
@@ -1698,10 +1808,70 @@ li{
          padding-left: 50px;
          padding-right: 50px;
     }
-    .article_box{
-    padding-left: 0;
+    
+    .nav_box{
+        width: 80% !important;
+    }
+    .el-backtop{
+        display: none;
+    }
+    .home_factory_titlebox {
+        margin-bottom: 90px;
+    }
+    .designer_image{
+        max-width: 280px;
+    }
+    .designer_introduce{
+        max-width: 268px;
+        padding-top:0;
+    }
+    .team_designer li {
+        align-items: flex-start;
+        margin-bottom:10px;
+    }
+    .designer_introduce .designer_info{
+        line-height: 1.7;
+    }
+    .about_tree {
+        height: 380px;
+    }
+    .about_dayang {
+        padding-top: 70px;
+        padding-bottom: 90px;
+    }
+    
+    .web_title{
+        font-size: 42px;
+    }
+    .web_bg {
+        height: 320px;
+    }
+    .article_box img{
+        width: 70%;
+    }
+    .home_banner{
+        height: 82%;
+    }
 }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width:440px) {

@@ -1,7 +1,7 @@
 // 定义全局组件
 Vue.component('site-top', {
   template: `
-        <div class="web_top"  :class="[{ web_top_bgoff: scrollY < 300 }, { hide: isHidden }]">
+        <div class="web_top"  :class="[{ web_top_bgoff: scrollY < 200 }, { hide: isHidden }]">
         <a href="index.html">
             <div class="logo" ></div>
         </a>
