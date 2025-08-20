@@ -5,33 +5,12 @@
   <title>Vue CDN 全局 Footer</title>
   <script src="https://unpkg.com/vue@2.7.16/dist/vue.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
-  <style>
-    body { margin: 0; font-family: Arial, sans-serif; }
-    .content { min-height: 80vh; padding: 20px; }
-    .web_foot {
-      display: flex;
-      justify-content: space-between;
-      background: #f1f1f1;
-      padding: 15px;
-      font-size: 14px;
-      border-top: 1px solid #ccc;
-    }
-    .web_foot_l p { margin: 5px 0; }
-    .web_foot_l a { margin-right: 10px; color: #333; text-decoration: none; }
-    .web_foot_r { display: flex; align-items: center; }
-    .foot_n { font-size: 20px; margin-left: 10px; cursor: pointer; }
-    .language { margin-left: 15px; cursor: pointer; }
-    .ne1{height: 1000px;}
-    .ne2{height: 1000px;}
-    .ne3{height: 1000px;}
-    .ne4{height: 1000px;}
-  </style>
 </head>
 <body>
 <div id="app">
   <div class="content">
     <ul>
-      <li>按钮1</li>
+      <li class="xs1">按钮1</li>
       <li>按钮2</li>
       <li>按钮3</li>
       <li>按钮4</li>
@@ -40,8 +19,6 @@
 
   <div class="ne1">内容1</div>
   <div class="ne2">内容2</div>
-  <div class="ne3">内容3</div>
-  <div class="ne4">内容4</div>
 
   <!-- 直接使用全局组件 -->
   <site-footer></site-footer>
@@ -51,9 +28,24 @@
 <script src="static/footer.js"></script>
 
 <script>
-new Vue({
-  el: '#app'
-});
+  var Main = {
+    data() {
+      return {
+        drawer: false,
+      }
+    },
+
+    mounted() {
+    },
+
+    methods: {
+    },
+
+  };
+
+  var Ctor = Vue.extend(Main);
+  new Ctor().$mount('#app');
 </script>
+
 </body>
 </html>

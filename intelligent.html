@@ -12,7 +12,7 @@
 
 </head>
 <body class="">
-<div id="app" class="" style="height: 100%;position: relative;">
+<div id="app" class="" style="height: 100%;position: relative;    background-color: #FAF5F5;">
 
 
 <template>
@@ -21,22 +21,22 @@
     <site-menu v-model="drawer"></site-menu>
 
    
-    <div class="intelligent_banner">
+    <div class="intelligent_banner section">
             <div class="animation_d"></div>
             <div class="intelligent_billboard ">
                 <h1>Full Systematization.</h1>
                 <h1>The Future Is Now.</h1>
                 <ul>
-                    <li>Full-Systematization</li>
-                    <li>Future Concept</li>
+                    <li :class="{g_active: activeIndex === 0}" @click="scrollTo('point-System')">Full-Systematization</li>
+                    <li :class="{g_active: activeIndex === 1}" @click="scrollTo('point-Future')">Future Concept</li>
                 </ul>
             </div>
     </div>
     <div class="gradient_bg">
         
         <div class="container_box intelligent_box">
-            <div class="intelligent_title">
-                <h1>Ustyylit System </h1>
+            <div class="intelligent_title" ref="point-System">
+                <h1>Ustyylit System</h1>
                 <p>USTYYLIT is an online platform for custom apparel brands, connecting design, fabric selection, and production in one streamlined workflow.</p>
             </div>
             <div class="ustyylit ustyylit_n1">
@@ -98,8 +98,8 @@
     <div class="gradient_bg2">
         <div class="container_box intelligent_box">
             <div class="intelligent_title lining_title">
-                    <h1>Ustyylit System </h1>
-                    <p>USTYYLIT is an online platform for custom apparel brands, connecting design, fabric selection, and production in one streamlined workflow.</p>
+                    <h1>Custom Linings Design</h1>
+                    <p>The Custom Lining feature aims to offer customers more personalized options, enhancing the uniqueness of bespoke garments and strengthening brand identity.</p>
             </div>
             <div class="customlining customlining_n1">
                 <div class="customlining_image"><img src="images/Lining1.png" width="100%" alt=""></div>
@@ -193,6 +193,95 @@
         </div>
 
     </div>
+
+
+    <div class="ai_bgbox section">
+
+    <div class="ai_bg" ref="point-Future">
+        <h1>The Future Is Now.</h1>
+        <p>AI Generation</p>
+    </div>
+    
+    <div class="container_box Future_title">
+            <p class="subtitle">Future Concept</p>
+            <h2 class="web_title ">
+                Innovate the fashion industry! Single item minimum order, intelligent design, virtual try on, flexible supply chain to achieve on-demand fast response, covering from finished clothing to high-end orders, meeting personalized needs.
+            </h2>
+    </div>
+
+    <ul class="ai_big">
+        <li>
+            <div style="background-image: url(images/ai-image1.jpg);"></div>
+            <h4>MTO Casual Wear Production</h4>
+            <p>Made-to-order casualwear - Produce only when ordered to minimize inventory</p>
+        </li>
+        <li>
+            <div style="background-image: url(images/ai-image2.jpg);"></div>
+            <h4>Virtual Try-On Technology</h4>
+            <p>Photo-powered garment simulation - Instantly visualize clothing try-on effects through AI-generated images & videos</p>
+        </li>
+        <li>
+            <div style="background-image: url(images/ai-image3.jpg);"></div>
+            <h4>Rapid Replenishment Program</h4>
+            <p>Fast restocking program - Quickly respond to market demand with shorter lead times</p>
+        </li>
+        <li>
+            <div style="background-image: url(images/ai-image4.jpg);"></div>
+            <h4>Photo-Based Measurement System</h4>
+            <p>AI body measurement - Smart sizing through photo analysis </p>
+        </li>
+    </ul>
+
+    <div class="container_box distinctions" style="border-top: 1px solid #DADADA;">
+        <div>
+            <p class="subtitle">Coming Soon</p>
+            <h1 class="web_title">Future Concept</h1>
+        </div>
+        <ul>
+            <li>
+                <h4>AI-Empowered Franchising Model</h4>
+                <p>AI-powered franchise system - Intelligent technology-driven franchising ecosystem</p>
+            </li>
+            <li>
+                <h4>Ultra-Low MOQ for Small Batches(1 SKU Minimum)</h4>
+                <p>Ultra-low minimum order quantity - Production available from just 1 single SKU</p>
+            </li>
+            <li>
+                <h4>Rapid Replenishment Program</h4>
+                <p>Fast restocking program - Quickly respond to market demand with shorter lead times</p>
+            </li>
+            <li>
+                <h4>MTO Casual Wear Production</h4>
+                <p>Made-to-measure formalwear - Premium customized tailoring service</p>
+            </li>
+            <li>
+                <h4>MTM Formal Wear Tailoring</h4>
+                <p>Made-to-measure formalwear - Premium customized tailoring service</p>
+            </li>
+            <li>
+                <h4>AI-Driven Design Solutions</h4>
+                <p>AI-powered design - Algorithm-generated fashion styles for efficient creation</p>
+            </li>
+            <li>
+                <h4>Virtual Try-On Technology</h4>
+                <p>Photo-powered garment simulation - Instantly visualize clothing try-on effects through AI-generated images & videos</p>
+            </li>
+            <li>
+                <h4>Photo-Based Measurement System</h4>
+                <p>AI body measurement - Smart sizing through photo analysis</p>
+            </li>
+            <li>
+                <h4>Integrated Multi-Business Model Ecosystem</h4>
+                <p>Unified business ecosystem - Seamless omnichannel retail integration</p>
+            </li>
+        </ul>
+        </div>
+
+
+
+
+    <site-footer></site-footer>
+    </div>
     
 
 
@@ -203,7 +292,7 @@
     
 
 
-    <site-footer></site-footer>
+    
   
 
 
@@ -260,6 +349,7 @@
                 data() {
                     return {
                         drawer: false,
+                        activeIndex: 0,
                     }
             },
 
@@ -269,7 +359,7 @@
                     spaceBetween: 30,
                     centeredSlides: true,
                     loop: true,
-                    loopedSlides: 10, // 一般 >= 你真实的 slide 数
+                    loopedSlides: 10,
                     initialSlide: 1,
                     pagination: {
                         el: '.swiper-pagination',
@@ -277,15 +367,49 @@
                     }
                 });
 
-                // 监听点击 slide
                 swiper.on('click', function (swiper, e) {
                     if (swiper.clickedIndex !== undefined) {
-                        swiper.slideTo(swiper.clickedIndex); // 把点击的 slide 移到中间
+                        swiper.slideTo(swiper.clickedIndex);
                     }
                 });
+                window.addEventListener('scroll', this.onScroll);
             },
-
+           
             methods: {
+                onScroll() {
+                    const sections = document.querySelectorAll('.section');
+                    let scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+                    sections.forEach((sec, i) => {
+                    let top = sec.offsetTop;
+                    let bottom = top + sec.offsetHeight;
+                    if (scrollTop >= top - 100 && scrollTop < bottom - 100) {
+                        this.activeIndex = i;
+                    }
+                    });
+                },
+
+                scrollTo(refName) {
+                    const element = this.$refs[refName];
+                    if (element) {
+                    const start = window.pageYOffset;
+                    const target = element.getBoundingClientRect().top + start;
+                    const duration = 800; 
+                    const startTime = performance.now();
+                    
+                    const animateScroll = (currentTime) => {
+                        const elapsed = currentTime - startTime;
+                        const progress = Math.min(elapsed / duration, 1);
+                        window.scrollTo(0, start + (target - start) * progress);
+                        
+                        if (progress < 1) {
+                        window.requestAnimationFrame(animateScroll);
+                        }
+                    };
+                    
+                    window.requestAnimationFrame(animateScroll);
+                    }
+                },
             },
 
         };

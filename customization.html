@@ -22,9 +22,9 @@
     <div class="container_box web_head">
         <h1 class="web_bigtitle">Personalized customization</h1>
         <ul>
-            <li>Making Personalized</li>
-            <li>Fully Customization</li>
-            <li>Distinctions</li>
+            <li @click="scrollTo('point-Personalized')">Making Personalized</li>
+            <li @click="scrollTo('point-Customization')">Fully Customization</li>
+            <li @click="scrollTo('point-Distinctions')">Distinctions</li>
         </ul>
     </div>
 
@@ -48,7 +48,7 @@
         </div>
     </div>
 
-    <div class="container_box immersive">
+    <div class="container_box immersive" ref="point-Personalized">
         <h1 class="web_title">Immersive Fun Making <br> Personalized</h1>
         <ul>
             <h2>Custom styles with tailored features, unique linings, and personalized measurements for repeat orders.</h2>
@@ -66,7 +66,7 @@
     </div>
 
 
-    <div class="fully_bg">
+    <div class="fully_bg" ref="point-Customization">
         <div class="container_box fully_title">
             <p class="subtitle">Fully Customization</p>
             <h2 class="web_title ">
@@ -95,7 +95,7 @@
                 </el-col>
             </el-row>
         </div>
-        <div class="container_box distinctions">
+        <div class="container_box distinctions" ref="point-Distinctions">
         <h1 class="web_title">Distinctions</h1>
         <ul>
             <li>
@@ -202,6 +202,27 @@
             },
 
             methods: {
+                scrollTo(refName) {
+                    const element = this.$refs[refName];
+                    if (element) {
+                    const start = window.pageYOffset;
+                    const target = element.getBoundingClientRect().top + start;
+                    const duration = 800; 
+                    const startTime = performance.now();
+                    
+                    const animateScroll = (currentTime) => {
+                        const elapsed = currentTime - startTime;
+                        const progress = Math.min(elapsed / duration, 1);
+                        window.scrollTo(0, start + (target - start) * progress);
+                        
+                        if (progress < 1) {
+                        window.requestAnimationFrame(animateScroll);
+                        }
+                    };
+                    
+                    window.requestAnimationFrame(animateScroll);
+                    }
+                },
             },
 
         };

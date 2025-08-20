@@ -22,9 +22,9 @@
     <div class="container_box web_head">
         <h1 class="web_bigtitle">Global Presence & Market Share</h1>
         <ul>
-            <li>Global Partners</li>
-            <li>Global Market</li>
-            <li>International Creative Team</li>
+            <li @click="scrollTo('point-Partners')">Global Partners</li>
+            <li @click="scrollTo('point-Market')">Global Market</li>
+            <li @click="scrollTo('point-Team')">International Creative Team</li>
         </ul>
     </div>
 
@@ -33,7 +33,7 @@
         <div class="webgm_bg_r"></div>
     </div>
 
-    <div class="conveyor-wrapper" id="wrapper">
+    <div class="conveyor-wrapper" id="wrapper" ref="point-Partners">
     <div class="conveyor-track" id="track">
         <div class="item" style="background-image:url(../images/m1.jpg);"></div>
         <div class="item" style="background-image:url(../images/m2.jpg);"></div>
@@ -53,7 +53,7 @@
     </div>
     </div>
 
-    <div class="container_box hpartners_market">
+    <div class="container_box hpartners_market" ref="point-Market">
         <p class="subtitle">Global Market</p>
         <h1 class="home_title">The global market spans major regions including Asia, Europe, North America and Oceania.</h1>
     </div>
@@ -92,7 +92,7 @@
     
 
 
-    <div class="myTeam">
+    <div class="myTeam" ref="point-Team">
         <div class="container_box team_title">
             <h1 class="web_title">International <br> Creative Team</h1>
             <p class="subtitle team_p">
@@ -240,6 +240,27 @@
             },
 
             methods: {
+                scrollTo(refName) {
+                    const element = this.$refs[refName];
+                    if (element) {
+                    const start = window.pageYOffset;
+                    const target = element.getBoundingClientRect().top + start;
+                    const duration = 800; 
+                    const startTime = performance.now();
+                    
+                    const animateScroll = (currentTime) => {
+                        const elapsed = currentTime - startTime;
+                        const progress = Math.min(elapsed / duration, 1);
+                        window.scrollTo(0, start + (target - start) * progress);
+                        
+                        if (progress < 1) {
+                        window.requestAnimationFrame(animateScroll);
+                        }
+                    };
+                    
+                    window.requestAnimationFrame(animateScroll);
+                    }
+                },
             },
 
         };

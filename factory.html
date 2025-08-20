@@ -22,14 +22,14 @@
     <div class="container_box web_head">
         <h1 class="web_bigtitle">The world factory is here</h1>
         <ul>
-            <li>Factories & Production Capacity</li>
-            <li>Quality System</li>
+            <li @click="scrollTo('point-Factories')">Factories & Production Capacity</li>
+            <li @click="scrollTo('point-Quality')">Quality System</li>
         </ul>
     </div>
 
     <div class="web_bg" style="background-image:url(images/FactoryBG.jpg);"></div>
 
-    <div class="container_box factory_data_t">
+    <div class="container_box factory_data_t" ref="point-Factories">
         <div class="factory_data_t_l">
             <h1 class="web_title">
                 Factories & Production
@@ -140,7 +140,7 @@
     </div>
 
 
-    <div class="container_box quality">
+    <div class="container_box quality" ref="point-Quality">
         <h1 class="web_title">Quality System</h1>
         <ul>
             <h2>Dayang upholds sustainability. Our certifications reflect our commitment to quality, innovation, and industry-leading standards.</h2>
@@ -285,6 +285,27 @@
             },
 
             methods: {
+                scrollTo(refName) {
+                    const element = this.$refs[refName];
+                    if (element) {
+                    const start = window.pageYOffset;
+                    const target = element.getBoundingClientRect().top + start;
+                    const duration = 800; 
+                    const startTime = performance.now();
+                    
+                    const animateScroll = (currentTime) => {
+                        const elapsed = currentTime - startTime;
+                        const progress = Math.min(elapsed / duration, 1);
+                        window.scrollTo(0, start + (target - start) * progress);
+                        
+                        if (progress < 1) {
+                        window.requestAnimationFrame(animateScroll);
+                        }
+                    };
+                    
+                    window.requestAnimationFrame(animateScroll);
+                    }
+                },
             },
 
         };
