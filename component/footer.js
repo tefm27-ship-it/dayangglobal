@@ -2,7 +2,7 @@
 Vue.component('site-footer', {
   template: `
     <div class="web_foot">
-      <el-backtop :visibility-height="600" :right="50" :bottom="130">
+      <el-backtop :visibility-height="1500" :right="50" :bottom="130">
         <div class="web-backtop"><i class="ri-arrow-up-line"></i></div>
       </el-backtop>
       <div class="web_foot_l">
