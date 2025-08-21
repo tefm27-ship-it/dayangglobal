@@ -11,6 +11,9 @@ Vue.component('site-menu', {
         <div class="nav_flex">
           <div class="nav_top">
             <p>MENU</p>
+            <a href="index.html">
+              <div class="logo_mob"></div>
+            </a>
             <div class="nav_close" @click="closeDrawer"><i class="ri-close-line"></i></div>
           </div>
           <ul class="nav_list">
