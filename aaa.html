@@ -1,21 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <title>Vue CDN  </title>
+  <link href="lib/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="remix/remixicon.css" />
+    <link rel="stylesheet" href="lib/swiper.min.css">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+<div id="app">
 
- <video
-        autoplay
-        muted
-        loop
-
-        >
-        <source src="https://www.runoob.com/try/demo_source/movie.mp4" type="video/mp4">
-
-    </video>
   
+
+  <div class="intelligent_banner section" style="height: 990px">
+            <div class="animation_d"></div>
+            <div class="intelligent_billboard ">
+                <h1>Full Systematization.</h1>
+                <h1>The Future Is Now.</h1>
+            </div>
+   </div>
+
+
+
+  <div class="content">
+    <ul>
+      <li class="xs1">按钮1</li>
+      <li>按钮2</li>
+      <li>按钮3</li>
+      <li>按钮4</li>
+    </ul>
+  </div>
+
+  <div class="ne1">内容1</div>
+  <div class="ne2">内容2</div>
+
+  <!-- 直接使用全局组件 -->
+  <site-footer></site-footer>
+</div>
+
+<!-- 引入 Footer 组件文件 -->
+<script src="static/footer.js"></script>
+<!-- import jquery-->
+    <script type="text/javascript" src="lib/jquery-3.6.0.min.js"></script>
+    <!-- import vue elm-->
+    <script type="text/javascript" src="lib/vue.js"></script>
+    <script type="text/javascript" src="lib/index.js"></script>
+
+<script>
+  var Main = {
+    data() {
+      return {
+        drawer: false,
+      }
+    },
+
+    mounted() {
+    },
+
+    methods: {
+    },
+
+  };
+
+  var Ctor = Vue.extend(Main);
+  new Ctor().$mount('#app');
+</script>
+
 </body>
 </html>
