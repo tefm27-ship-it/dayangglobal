@@ -2252,10 +2252,12 @@ li{
     }
     .home_market {
         padding-top: 40px;
+        padding-bottom: 20px;
     }
-    .world_image{
-        height: 200px;
-        margin-bottom: 40px;
+    .world_image {
+        height: 250px;
+        margin-bottom: 0;
+        background-size: 140%;
     }
     .home_contact_a {
         padding-right: 30%;
@@ -2328,6 +2330,25 @@ li{
         margin-top: -5px;
 
     }
+    .home_contact{
+        height: 90px;
+        padding-top: 0;
+    }
+    .nav_bottom{
+        justify-content: flex-start;
+    }
+    .menu_foot{
+        display: flex;
+    }
+    .menu_foot .menu_language{
+        display: block;
+        margin-left: 0;
+        padding-right: 20px;
+    }
+    .foot_n{
+        display: block;
+    }
+
 
 }
 

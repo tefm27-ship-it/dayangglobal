@@ -24,8 +24,8 @@ Vue.component('site-menu', {
               <li><a href="customization.html">Personalized Customization</a></li>
           </ul>
           <div class="nav_bottom">
-            <div class="web_foot_r">
-              <div class="language">English <i class="ri-earth-line"></i></div>
+            <div class="web_foot_r menu_foot">
+              <div class="language menu_language">English <i class="ri-earth-line"></i></div>
               <i class="ri-linkedin-box-fill foot_n"></i>
               <i class="ri-instagram-fill foot_n"></i>
               <i class="ri-twitter-x-line foot_n"></i>
