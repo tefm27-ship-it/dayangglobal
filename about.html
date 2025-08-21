@@ -295,5 +295,25 @@
 
 
 
+    <script>
+        function playVideo() {
+        const video = document.getElementById('video-home');
+            if (video) {
+                if (window.WeixinJSBridge) {
+
+                    WeixinJSBridge.invoke('getNetworkType', {}, () => video.play());
+                } else {
+
+                    video.play();
+                }
+            }
+        }
+
+        document.addEventListener('WeixinJSBridgeReady', playVideo, false);
+        document.addEventListener('touchstart', playVideo, { once: true });
+    </script>
+
+
+
 </body>
 </html>

@@ -48,9 +48,8 @@
         x5-video-orientation="portrait"
         oncontextmenu="return false"
         >
-        <source src="https://www.runoob.com/try/demo_source/movie.mp4" type="video/mp4">
-        <!-- <source src="video/hv.mp4" type="video/mp4">
-        <source src="video/hv.webm" type="video/webm"> -->
+        <source src="video/hv.mp4" type="video/mp4">
+        <source src="video/hv.webm" type="video/webm">
         <!-- <img src="fallback-image.jpg" alt="背景图片"> -->
     </video>
     </div>
@@ -406,15 +405,21 @@
 
 
     <script>
-        // document.addEventListener('DOMContentLoaded', function() {
-        //     var video = document.getElementById('video-home');
-        //     video.play();
-            
-        //     // 处理移动设备上的自动播放限制
-        //     video.addEventListener('click', function() {
-        //         video.play();
-        //     });
-        // });
+        function playVideo() {
+        const video = document.getElementById('video-home');
+            if (video) {
+                if (window.WeixinJSBridge) {
+                WeixinJSBridge.invoke('getNetworkType', {}, () => video.play());
+                } else {
+                video.play();
+                }
+            }
+        }
+        document.addEventListener('WeixinJSBridgeReady', playVideo, false);
+        document.addEventListener('touchstart', playVideo, { once: true });
+
+
+
 
         $('.web_top').click(function(event) {
             if (event.target === this) {
@@ -422,6 +427,8 @@
             }
         });
     </script>
+
+
 
 
 

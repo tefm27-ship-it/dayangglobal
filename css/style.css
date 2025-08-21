@@ -2186,7 +2186,7 @@ li{
     }
     .home_banner {
         height: 100%;
-        padding-top: 60px;
+        padding-top: 0px;
     }
     .home_banner h1 {
         font-size: 47px;
