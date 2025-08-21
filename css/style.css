@@ -2331,10 +2331,10 @@ li{
 
     }
     .home_contact{
-        height: 90px;
         padding-top: 0;
     }
     .nav_bottom{
+        height: 90px;
         justify-content: flex-start;
     }
     .menu_foot{
