@@ -35,17 +35,21 @@
     <div class="home_banner">
          <h1>Hello,<br>Dayang Global</h1>
          <p>Discover Dayang’s Expertise</p>
-    <video id="video-home"
+    <video
+        id="video-home"
+        src="video/hv.mp4"
         autoplay
         muted
         loop
         playsinline
         webkit-playsinline
+        x5-playsinline
         x5-video-player-type="h5"
         x5-video-player-fullscreen="false"
         x5-video-orientation="portrait"
-        oncontextmenu="return false">
-        <source src="https://www.runoob.com/try/demo_source/movie.mp4" type="video/mp4">
+        oncontextmenu="return false"
+        >
+        <source src="video/hv.mp4" type="video/mp4">
         <source src="video/aibg.webm" type="video/webm">
         <!-- <img src="fallback-image.jpg" alt="背景图片"> -->
     </video>
@@ -402,15 +406,15 @@
 
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var video = document.getElementById('video-home');
-            video.play();
+        // document.addEventListener('DOMContentLoaded', function() {
+        //     var video = document.getElementById('video-home');
+        //     video.play();
             
-            // 处理移动设备上的自动播放限制
-            video.addEventListener('click', function() {
-                video.play();
-            });
-        });
+        //     // 处理移动设备上的自动播放限制
+        //     video.addEventListener('click', function() {
+        //         video.play();
+        //     });
+        // });
 
         $('.web_top').click(function(event) {
             if (event.target === this) {
