@@ -8,8 +8,8 @@ Vue.component('site-footer', {
       <div class="web_foot_l">
         <p>© 2025 dayang All Right Reserved</p>
         <p>
-          <a href="">About Us</a>
-          <a href="">Contact Us</a>
+          <a href="about.html">About Us</a>
+          <a href="index.html#container-link">Contact Us</a>
         </p>
       </div>
       <div class="web_foot_r">
