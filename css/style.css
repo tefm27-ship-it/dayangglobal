@@ -565,6 +565,19 @@ li{
     flex: auto;
 }
 
+.contactinfo_box label{
+    font-size: 16px;
+}
+.contactinfo_box .el-input__inner{
+    font-size: 16px;
+}
+
+.contactinfo_box .el-textarea__inner{
+    font-size: 16px;
+    font-family: 'Manrope', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+
 
 
 
@@ -754,8 +767,17 @@ li{
     font-weight: 600;
 }
 
+.world_share{
+    font-size: 24px; 
+    font-weight: 800;
+}
+
+
 .world_data ul li{
     text-align: center;
+}
+.world_data ul li h1{
+    font-size: 36px;
 }
 .factory_data_t_r h1{
     font-weight: 800;
@@ -949,6 +971,7 @@ li{
 
 .factory_data_t ul li h1{
     font-size: 46px;
+    margin-top: 5px;
 }
 
 .factory_data_t ul li p{
@@ -1130,7 +1153,7 @@ li{
 .immersive ul li{
     border: 1px solid #dedede;
     padding: 16px 35px;
-    border-radius: 10px;
+    border-radius: 4px;
     margin-top: 15px;
     font-weight: 600;
 }
@@ -1167,6 +1190,14 @@ li{
 }
 
 
+
+.fully_image{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 60px;
+}
+
 .distinctions{
     display: flex;
     padding-top: 100px;
@@ -1176,7 +1207,7 @@ li{
 }
 
 .distinctions .web_title{
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 .distinctions ul li h4{
@@ -1259,7 +1290,7 @@ li{
 .animation_d{
     width: 630px;
     height: 550px;
-    border: 100px solid #E5EBF0;
+    border: 100px solid #d1dde8;
     position: absolute;
     border-radius: 80px 300px 300px 80px;
     z-index: 1;
@@ -1277,7 +1308,7 @@ li{
   50% {
     transform: translate(-30px, 10px) scale(2);
     filter: blur(40px);
-    opacity: 0.2;
+    opacity: 0.3;
   }
   100% {
     transform: translate(0px, 0px) scale(0.5);
@@ -1744,6 +1775,9 @@ li{
     .web_bg{
         height: 700px;
     }
+    .customization_video{
+        height: 800px;
+    }
 }
 
 @media (max-width:1300px) {
@@ -1803,6 +1837,9 @@ li{
     }
     .customlining{
         justify-content: center;
+    }
+    .customization_video{
+        height: 700px;
     }
 }
 
@@ -1962,7 +1999,7 @@ li{
     .animation_d{
         width: 441px;
         height: 385px;
-        border: 70px solid #E5EBF0;
+        border: 70px solid #d1dde8;
     }
     /* .ustyylit_n2{
         flex-direction: row;
@@ -2016,6 +2053,9 @@ li{
     }
     .ai_big{
         margin-bottom: 100px;
+    }
+    .customization_video{
+        height: 500px;
     }
 }
 
@@ -2093,7 +2133,7 @@ li{
     .animation_d {
         width: 315px;
         height: 275px;
-        border: 50px solid #E5EBF0;
+        border: 50px solid #d1dde8;
         animation: waterFloat 4s ease-in-out infinite;
     }
     .new3dbtn img{
@@ -2117,6 +2157,9 @@ li{
     }
     .home_banner h1 {
         font-size: 70px;
+    }
+    .customization_video{
+        height: 730px;
     }
     
 }
@@ -2146,7 +2189,7 @@ li{
 
 @media (max-width: 480px) {
     body{
-        font-size: 15px;
+        font-size: 16px;
     }
     .container_box{
          padding-left: 30px;
@@ -2180,6 +2223,16 @@ li{
         background-color: rgba(255, 255, 255, 1);
         margin-top: 0;
     }
+
+    .web_top_bgoff{
+        background-color: rgba(255, 255, 255, 1);
+        height: 60px;
+    }
+    .web_top_bgoff .logo{
+        height: 28px;
+    }
+
+
     .home_logo{
         height: 28px;
         background-image: url(../images/logo.png);
@@ -2190,7 +2243,7 @@ li{
     }
     .home_banner h1 {
         font-size: 47px;
-        margin-top: -50px;
+        margin-top: 10px;
     }
     .home_banner p{
         font-size: 13px;
@@ -2201,7 +2254,8 @@ li{
         font-size: 33px;
     }
     .subtitle{
-        font-size: 15px;
+        font-size: 16px;
+        line-height: 1.7em;
     }
     .four_core {
         padding-top: 50px;
@@ -2211,7 +2265,7 @@ li{
         height: 220px;
     }
     .lbox_name{
-        font-size: 13px;
+        font-size: 15px;
     }
     .home_factorybox {
         padding-top: 100px;
@@ -2349,6 +2403,267 @@ li{
         display: block;
     }
 
+    .web_bigtitle{
+        font-size: 36px;
+        padding-left: 30px;
+    }
+    .web_head{
+        padding-top: 130px;
+        padding-bottom: 15px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .web_head ul{
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .web_title{
+        font-size: 33px;
+    }
+    .article_box{
+        font-weight: 400;
+    }
+    .about_dayang {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+    .article_box img{
+        width: 100%;
+    }
+    .about_video {
+        height: 150px;
+    }
+    .about_footprints{
+        padding-bottom: 10px;
+    }
+    .historylist ul li{
+        padding: 15px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    .historylist ul .year h1{
+        font-size: 26px;
+    }
+    .historylist ul .event{
+        font-size: 14px;
+        padding-left: 30px;
+    }
+
+    .core_capabilities{
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
+    .about_tree {
+        height: 230px;
+    }
+    .team_title{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .team_p{
+        margin-top: 20px;
+    }
+    .team_designer{
+        padding: 30px;
+    }
+    .designer_image {
+        max-width: 100%;
+    }
+    .designer_introduce{
+        max-width: 100%;
+        padding-bottom: 90px;
+    }
+    .designer_introduce .subtitle {
+        width: 90%;
+        margin-top: 15px;
+    }
+    .designer_name {
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    .webgm_bg {
+        height: 330px;
+    }
+    .conveyor-wrapper{
+        height:280px;
+        padding-top:50px;
+    }
+    .item{
+        min-width: 220px;
+    }
+    .footprints_title{
+        margin-bottom: 30px;
+        font-size: 26px;
+    }
+    .partners_logo .container_box{
+        padding: 0;
+    }
+    .hpartners_market {
+        padding-top: 60px;
+    }
+    .world_share{
+        display: none;
+    }
+    .world_data ul li h1{
+        font-size: 25px;
+    }
+    .world_data ul li {
+        font-size: 14px;
+    }
+    .factory_data_t{
+        margin-top: 0;
+        padding-bottom: 10px;
+    }
+    .factory_data_t ul li h1 {
+        font-size: 30px;
+    }
+    .factory_data_t_r li div {
+        height: 20px;
+    }
+    .factory_data_t ul li {
+        margin-right: 45px;
+        margin-bottom: 60px;
+    }
+    .factory_data_t_r{
+        padding-bottom:0;
+    }
+
+    .factory_pt{
+        border-top: 1px solid #dadada;
+        padding-bottom: 70px;
+    }
+    .factory_pt_l .web_title {
+        margin-bottom: 10px;
+    }
+    .factory_pt_l ul p {
+        margin-bottom: 40px;
+        max-width: 80%;
+    }
+    .factory_pt_r img {
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .factory_data_t_l{
+        padding-bottom: 70px;
+    }
+    .factory_notice h2 {
+        font-size: 22px;
+    }
+    .factory_listbox{
+        padding-top: 10px;
+        padding-bottom: 70px;
+    }
+    .factory_list_name h1{
+        font-weight: 600;
+        font-size: 26px;
+        margin-top: 5px;
+    }
+    .factory_list {
+        margin-top: 50px;
+        flex-direction: column-reverse;
+    }
+    .quality{
+        padding-top: 60px;
+        padding-bottom:0;
+    }
+    .quality ul h2 {
+        font-size: 22px;
+    }
+    .quality ul li {
+        line-height: 1.4em;
+        list-style: none;
+        margin-bottom: 32px;
+    }
+    .attestation_n {
+        padding: 20px;
+    }
+    .attestation {
+        padding-bottom: 70px;
+    }
+    .customization_video{
+        height: 580px;
+    }
+    .customization_billboard h2 {
+        font-size: 42px;
+    }
+    .customization_billboard h1 {
+        font-size: 52px;
+    }
+    .customization_billboard {
+        margin-top: 240px;
+    }
+    .immersive{
+        padding-bottom: 40px;
+    }
+    .immersive ul h2{
+        font-size: 26px;
+    }
+    .immersive ul li{
+        padding: 16px 15px;
+        font-size: 14px;
+    }
+    .immersive_photo img{
+        width: 100%;
+    }
+    .immersive_photo p {
+        font-size: 16px;
+        margin-top: 12px;
+    }
+    .immersive_photo {
+        padding-bottom: 80px;
+        padding-top: 40px;
+    }
+    .fully_title h2 {
+        font-size: 26px;
+    }
+    .fully_title {
+        padding-top: 50px;
+    }
+    .fully_image{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        row-gap: 15px;
+    }
+
+    .fully_image .el-col{
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+    .fullybox {
+        padding-top: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .distinctions{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .distinctions ul li {
+        margin-bottom: 50px;
+    }
+    .customization_bg {
+        height: 330px;
+    }
+    .intelligent_billboard h1 {
+        font-size: 58px;
+        word-break: break-word;
+    }
+    .intelligent_billboard {
+        padding: 50px 40px;
+        margin-top: 50px;
+    }
+    .intelligent_banner {
+        height: 80%;
+    }
+    .intelligent_billboard ul {
+        margin-top: 80px;
+    }
+    .intelligent_billboard ul li{
+        margin-bottom: 10px;
+        min-width: 68%;
+        text-align: center;
+    }
 
 }
 
