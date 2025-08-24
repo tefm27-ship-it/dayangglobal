@@ -386,18 +386,18 @@
             },
            
             methods: {
-                onScroll() {
-                    const sections = document.querySelectorAll('.section');
-                    let scrollTop = window.scrollY || document.documentElement.scrollTop;
+                // onScroll() {
+                //     const sections = document.querySelectorAll('.section');
+                //     let scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-                    sections.forEach((sec, i) => {
-                    let top = sec.offsetTop;
-                    let bottom = top + sec.offsetHeight;
-                    if (scrollTop >= top - 100 && scrollTop < bottom - 100) {
-                        this.activeIndex = i;
-                    }
-                    });
-                },
+                //     sections.forEach((sec, i) => {
+                //     let top = sec.offsetTop;
+                //     let bottom = top + sec.offsetHeight;
+                //     if (scrollTop >= top - 100 && scrollTop < bottom - 100) {
+                //         this.activeIndex = i;
+                //     }
+                //     });
+                // },
 
                 scrollTo(refName) {
                     const element = this.$refs[refName];

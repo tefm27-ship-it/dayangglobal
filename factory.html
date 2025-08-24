@@ -256,32 +256,6 @@
             },
 
             mounted() {
-
-                const track = document.getElementById("track");
-                const wrapper = document.getElementById("wrapper");
-
-                track.innerHTML += track.innerHTML;
-
-                let pos = 0;
-                let speed = 1; // 滚动速度
-                let paused = false;
-
-                const totalWidth = track.scrollWidth / 2; 
-
-                function animate() {
-                if (!paused) {
-                    pos -= speed;
-                    if (-pos >= totalWidth) pos = 0;
-                    track.style.transform = `translateX(${pos}px)`;
-                }
-                requestAnimationFrame(animate);
-                }
-
-                window.addEventListener("DOMContentLoaded", animate);
-
-                wrapper.addEventListener("mouseenter", () => { paused = true; });
-                wrapper.addEventListener("mouseleave", () => { paused = false; });
-                
             },
 
             methods: {

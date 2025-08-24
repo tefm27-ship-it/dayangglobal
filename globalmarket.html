@@ -211,45 +211,16 @@
             },
 
             mounted() {
-                // const track = document.getElementById("track");
-                // const wrapper = document.getElementById("wrapper");
-
-                // track.innerHTML += track.innerHTML;
-
-                // let pos = 0;
-                // let speed = 1;
-                // let paused = false;
-                // let totalWidth = 0;
-
-                // function animate() {
-                //     if (!paused) {
-                //         pos -= speed;
-                //         if (-pos >= totalWidth) pos = 0;
-                //         track.style.transform = `translateX(${pos}px)`;
-                //     }
-                //     requestAnimationFrame(animate);
-                // }
-
-                // requestAnimationFrame(() => {
-                //     totalWidth = track.scrollWidth / 2;
-                //     animate();
-                // });
-
-                // document.querySelectorAll(".pause-on-hover").forEach(el => {
-                //     el.addEventListener("mouseenter", () => { paused = true; });
-                //     el.addEventListener("mouseleave", () => { paused = false; });
-                // });
-
 
                 window.addEventListener("load", () => {
                     const track = document.getElementById("track");
                     const wrapper = document.getElementById("wrapper");
 
-                    // ✅ 克隆内容，做无缝轮播
+                   
                     track.innerHTML += track.innerHTML;
 
                     let pos = 0;
-                    let speed = 1; // 滚动速度
+                    let speed = 1; // speed
                     let paused = false;
                     let totalWidth = 0;
                     let rafId;
@@ -263,12 +234,12 @@
                         rafId = requestAnimationFrame(animate);
                     }
 
-                    // ✅ 等待渲染完成后再计算 scrollWidth
+                 
                     requestAnimationFrame(() => {
                         requestAnimationFrame(() => {
                         totalWidth = track.scrollWidth / 2;
                         if (totalWidth === 0) {
-                            // iOS 兜底：再等一点时间
+                           
                             setTimeout(() => {
                             totalWidth = track.scrollWidth / 2;
                             animate();
@@ -279,24 +250,21 @@
                         });
                     });
 
-                    // ✅ 鼠标悬停/触摸时暂停
                     document.querySelectorAll(".pause-on-hover").forEach(el => {
                         el.addEventListener("mouseenter", () => { paused = true; });
                         el.addEventListener("mouseleave", () => { paused = false; });
 
-                        // ✅ iOS 微信兼容 touch 事件
                         el.addEventListener("touchstart", () => { paused = true; }, {passive:true});
                         el.addEventListener("touchend", () => { paused = false; }, {passive:true});
                     });
 
-                    // ✅ 微信 / 低端 iOS WebView 兜底
                     setInterval(() => {
                         if (!paused) {
                         pos -= speed;
                         if (-pos >= totalWidth) pos = 0;
                         track.style.transform = `translateX(${pos}px)`;
                         }
-                    }, 16); // 大约 60fps
+                    }, 16);
                 });
                 
 
