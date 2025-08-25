@@ -1,4 +1,4 @@
-// 定义全局组件
+
 Vue.component('site-top', {
   template: `
         <div class="web_top"  :class="[{ web_top_bgoff: scrollY < 100 }, { hide: isHidden }]">
