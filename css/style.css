@@ -827,7 +827,7 @@ li{
     font-size: 16px;
     font-weight: 600;
     line-height: 1.6;
-    text-align: justify;
+    /* text-align: justify; */
     padding-left: 40px;
 }
 
