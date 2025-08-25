@@ -6,7 +6,7 @@ Vue.component('site-footer', {
         <div class="web-backtop"><i class="ri-arrow-up-line"></i></div>
       </el-backtop>
       <div class="web_foot_l">
-        <p>© 2025 dayang All Right Reserved</p>
+        <p>© 2025 Dayang All Right Reserved</p>
         <p>
           <a href="about.html">About Us</a>
           <a href="index.html#container-link">Contact Us</a>
