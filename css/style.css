@@ -2684,10 +2684,11 @@ li{
     }
     .intelligent_billboard {
         padding: 50px 40px;
-        margin-top: 20px;
-    }
+        margin-top: 0;
+        padding-bottom: 0;
+        }
     .intelligent_banner {
-        height: 750px;
+        height: 680px;
     }
     .intelligent_billboard ul {
         margin-top: 80px;
