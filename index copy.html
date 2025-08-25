@@ -23,22 +23,18 @@
         <div class="logo " :class="[{ home_logo: scrollY < 400 }, { hide: isHidden }]"></div>
         </a>
         <div class="menu_box">
-            <div class="language" @click="toggleLanguage">
-                 {{ currentLangLabel }} <i class="ri-earth-line"></i>
-            </div>
+            <div class="language">English <i class="ri-earth-line"></i></div>
             <div class="menu_btn" @click="drawer = true" ><i class="ri-menu-line"></i></div>
         </div>
     </div>
-
-    
 
     <site-menu v-model="drawer"></site-menu>
 
  
 
     <div class="home_banner">
-         <h1>{{ $t('welcome') }}</h1>
-         <p>{{ $t('description') }}</p>
+         <h1>Hello,<br>Dayang Global</h1>
+         <p>Discover Dayang’s Expertise</p>
     <video
         id="video-home"
         autoplay
@@ -273,16 +269,11 @@
     <script type="text/javascript" src="lib/index.js"></script>
     <!-- import swiper-->
     <script src="lib/swiper.min.js"></script>
-    <!-- import i18n -->
-    <script src="https://cdn.jsdelivr.net/npm/vue-i18n@8/dist/vue-i18n.min.js"></script>
 
     <!--  component  -->
     <script src="component/footer.js"></script>
     <!-- <script src="component/top.js"></script> -->
-    <script src="component/menu.js"></script>
-    <script src="component/i18n-common.js"></script>
-
-   
+     <script src="component/menu.js"></script>
     
     <script>
         
@@ -372,11 +363,10 @@
                 loop: true,
             });
         },
-        computed: {
-            currentLangLabel() {
-            return this.$t("langLabel");
-            }
-        },
+        // beforeDestroy() {
+        //     window.removeEventListener('scroll', this.handleScroll);
+        //     window.removeEventListener('resize', this.handleResize);
+        // },
         
         methods: {
             
@@ -401,18 +391,12 @@
             console.log('Submit Form:', this.form);
             this.$message.success('success');
             },
-            toggleLanguage() {
-                const newLang = this.$i18n.locale === "en" ? "zh" : "en";
-                this.$i18n.locale = newLang;
-                localStorage.setItem("lang", newLang);
-            },
         },
 
         };
 
-        // var Ctor = Vue.extend(Main);
-        // new Ctor({ i18n }).$mount('#app');
-        createApp(Main).$mount('#app');
+        var Ctor = Vue.extend(Main);
+        new Ctor().$mount('#app');
     </script>
 
 

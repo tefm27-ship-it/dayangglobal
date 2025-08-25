@@ -6,9 +6,7 @@ Vue.component('site-top', {
             <div class="logo" ></div>
         </a>
         <div class="menu_box">
-            <div class="language" @click="toggleLanguage">
-                 {{ currentLangLabel }} <i class="ri-earth-line"></i>
-            </div>
+            <div class="language">English <i class="ri-earth-line"></i></div>
             <div class="menu_btn" @click="openMenu"><i class="ri-menu-line"></i></div>
         </div>
     </div>
@@ -39,11 +37,6 @@ Vue.component('site-top', {
   beforeUnmount() {
     window.removeEventListener("scroll", this.handleScroll);
   },
-  computed: {
-    currentLangLabel() {
-      return this.$t("langLabel");
-    }
-  },
   methods: {
     handleScroll() {
       const currentY = window.scrollY || window.pageYOffset;
@@ -53,12 +46,7 @@ Vue.component('site-top', {
     },
     openMenu() {
       this.$emit('open-top') 
-    },
-    toggleLanguage() {
-      const newLang = this.$i18n.locale === "en" ? "zh" : "en";
-      this.$i18n.locale = newLang;
-      localStorage.setItem("lang", newLang);
-    },
+    }
   }
 
 });

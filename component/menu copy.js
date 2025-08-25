@@ -25,9 +25,7 @@ Vue.component('site-menu', {
           </ul>
           <div class="nav_bottom">
             <div class="web_foot_r menu_foot">
-              <div class="language" @click="toggleLanguage">
-                 {{ currentLangLabel }} <i class="ri-earth-line"></i>
-              </div>
+              <div class="language menu_language">English <i class="ri-earth-line"></i></div>
               <i class="ri-linkedin-box-fill foot_n"></i>
               <i class="ri-instagram-fill foot_n"></i>
               <i class="ri-twitter-x-line foot_n"></i>
@@ -44,20 +42,11 @@ Vue.component('site-menu', {
     visible: {
       get() { return this.value },
       set(val) { this.$emit('input', val) }  
-    },
-    currentLangLabel() {
-      return this.$t("langLabel");
     }
   },
-  
   methods: {
     closeDrawer() {
       this.visible = false
-    },
-    toggleLanguage() {
-      const newLang = this.$i18n.locale === "en" ? "zh" : "en";
-      this.$i18n.locale = newLang;
-      localStorage.setItem("lang", newLang);
-    },
+    }
   }
 });

@@ -20,7 +20,7 @@
     <site-menu v-model="drawer"></site-menu>
 
     <div class="container_box web_head">
-        <h1 class="web_bigtitle">{{ $t('welcome') }}</h1>
+        <h1 class="web_bigtitle">About Us</h1>
         <ul>
             <li @click="scrollTo('point-About')">About dayang</a></li>
             <li @click="scrollTo('point-footprints')">Footprints</li>
@@ -225,14 +225,11 @@
     <!-- import vue elm-->
     <script type="text/javascript" src="lib/vue.js"></script>
     <script type="text/javascript" src="lib/index.js"></script>
-    <!-- import i18n -->
-    <script src="https://cdn.jsdelivr.net/npm/vue-i18n@8/dist/vue-i18n.min.js"></script>
 
     <!--  component  -->
     <script src="component/footer.js"></script>
     <script src="component/top.js"></script>
      <script src="component/menu.js"></script>
-     <script src="component/i18n-common.js"></script>
     
     <script>
         
@@ -265,11 +262,6 @@
                     }
                 });
             },
-            computed: {
-                currentLangLabel() {
-                return this.$t("langLabel");
-                }
-            },
 
             methods: {
                 scrollTo(refName) {
@@ -293,14 +285,12 @@
                     window.requestAnimationFrame(animateScroll);
                     }
                 },
-                
             },
 
         };
 
-        // var Ctor = Vue.extend(Main);
-        // new Ctor().$mount('#app');
-        createApp(Main).$mount("#app");
+        var Ctor = Vue.extend(Main);
+        new Ctor().$mount('#app');
     </script>
 
 
