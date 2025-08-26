@@ -37,8 +37,8 @@
  
 
     <div class="home_banner">
-         <h1>{{ $t('welcome') }}</h1>
-         <p>{{ $t('description') }}</p>
+         <h1 v-html="$t('index.welcome')"></h1>
+         <p>{{ $t('index.description') }}</p>
     <video
         id="video-home"
         autoplay
@@ -58,27 +58,27 @@
 
     <div class="home_bg">
     <div class="container_box four_core">
-        <p class="subtitle">Founding and Leadership</p>
-        <h1 class="home_title">Dayang International Business</h1>
+        <p class="subtitle">{{ $t('index.foundingAndLeadership') }}</p>
+        <h1 class="home_title" v-html="$t('index.websitemaintitle')"></h1>
     </div>
 
     <div class="swiper-container lbox">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide lbox_n">
                         <div class="lbox_img" style="background-image:url(images/global-men.jpg);"></div>
-                        <div class="lbox_name">The leader in the global men's formalwear business</div>
+                        <div class="lbox_name">{{ $t('index.websitemainunit1') }}</div>
                     </div>
                     <div class="swiper-slide lbox_n">
                         <div class="lbox_img" style="background-image:url(images/benchmarks.jpg);"></div>
-                        <div class="lbox_name">Setting industry benchmarks with craftsmanship and innovation</div>
+                        <div class="lbox_name">{{ $t('index.websitemainunit2') }}</div>
                     </div>
                     <div class="swiper-slide lbox_n">
                         <div class="lbox_img" style="background-image:url(images/hli.jpg);"></div>
-                        <div class="lbox_name">A dominant player in men's custom tailoring</div>
+                        <div class="lbox_name">{{ $t('index.websitemainunit3') }}</div>
                     </div>
                     <div class="swiper-slide lbox_n">
                         <div class="lbox_img" style="background-image:url(images/1979by.jpg);"></div>
-                        <div class="lbox_name">Founded in 1979 by Ms. Li Guilian</div>
+                        <div class="lbox_name">{{ $t('index.websitemainunit4') }}</div>
                     </div>
                 </div>
                 <!-- <div class="swiper-scrollbar"></div> -->
@@ -89,17 +89,17 @@
             <el-col :md="16" :xs="24">
             <div class="home_factory_left">
                 <div class="home_factory_titlebox">
-                    <p class="subtitle">World Factory</p>
-                    <h1 class="home_title">Precision and high efficiency to meet diverse global demands</h1>
+                    <p class="subtitle">{{ $t('index.descriptionFactory') }}</p>
+                    <h1 class="home_title">{{ $t('index.titleFactory') }}</h1>
                 </div>
                 <div class="home_factory_subtitle">
                     <div class="factory_subtitle_digit">
                         <h1 class="home_title">7</h1>
-                        <p>7 advanced factories forming a powerful production matrix</p>
+                        <p>{{ $t('index.advancedFactory') }}</p>
                     </div>
                     <div class="factory_subtitle_digit">
                         <h1 class="home_title">4500+</h1>
-                        <p>Over 4,500 top-tier local workers ensuring quality and efficiency</p>
+                        <p>{{ $t('index.workersFactory') }}</p>
                     </div>
                 </div>
             </div>
@@ -109,27 +109,27 @@
                     <div class="factory_board">
                         <div class="factory_board_img"></div>
                         <div class="factory_board_data">
-                            <h2>Capacity</h2>
+                            <h2>{{ $t('index.DataFactorytitle') }}</h2>
                             <ul>
                                 <li>
                                     <div class="board_img"><img src="images/icon-jacket.png" height="100%" alt=""></div>
                                     <div class="board_type">
-                                        <p style="font-weight: 800;">Formal Wear</p>
-                                        <p>Monthly Capacity: 270,000 Units</p>
+                                        <p style="font-weight: 800;">{{ $t('index.capacity.formalWear.DataFactorycategory') }}</p>
+                                        <p>{{ $t('index.capacity.formalWear.DataFactorynumber') }}</p>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="board_img"><img src="images/icon-hoodie.png" height="100%" alt=""></div>
                                     <div class="board_type">
-                                        <p style="font-weight: 800;">Casual Wear</p>
-                                        <p>Monthly Capacity: 50,000 Units</p>
+                                        <p style="font-weight: 800;">{{ $t('index.capacity.casualWear.DataFactorycategory') }}</p>
+                                        <p>{{ $t('index.capacity.casualWear.DataFactorynumber') }}</p>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="board_img"><img src="images/icon-shirt.png" height="100%" alt=""></div>
                                     <div class="board_type">
-                                        <p style="font-weight: 800;">Shirts</p>
-                                        <p>Monthly Capacity: 50,000 Units</p>
+                                        <p style="font-weight: 800;">{{ $t('index.capacity.shirts.DataFactorycategory') }}</p>
+                                        <p>{{ $t('index.capacity.shirts.DataFactorynumber') }}</p>
                                     </div>
                                 </li>
                                 <li>
@@ -161,38 +161,38 @@
     </div>
 
     <div class="container_box home_market">
-        <p class="subtitle">Global Market</p>
-        <h1 class="home_title">The global market spans major regions including Asia, Europe, North America and Oceania.</h1>
+        <p class="subtitle">{{ $t('index.globalMarketdescription') }}</p>
+        <h1 class="home_title">{{ $t('index.globalMarkettitle') }}</h1>
     </div>
     <div class="container_box world_image">
     </div>
 
     <div class="container_box" id="container-link">
-        <p class="subtitle">Find us in the world</p>
-        <h1 class="home_title">Contact Us</h1>
+        <p class="subtitle">{{ $t('index.contactUsdescription') }}</p>
+        <h1 class="home_title">{{ $t('index.contactUs') }}</h1>
     </div>
     <div class="container_box home_contact">
     <el-row>
         <el-col :sm="8" :xs="24" class="home_contact_a">
-            <p>China Regional Headquarters</p>
+            <p>{{ $t('index.contact.china.contactTitle') }}</p>
             <ul>
-                <li>No.23 Haerbin Road Economic & Technical Development Zone Dalian, China 116600</li>
-                <li style="margin-top: 20px;">E-mail: dayang@dayang.net</li>
-                <li>Phone: +86 411 88888888</li>
+                <li>{{ $t('index.contact.china.contactAddress') }}</li>
+                <li style="margin-top: 20px;">{{ $t('index.contact.china.contactEmail') }}</li>
+                <li>{{ $t('index.contact.china.contactPhone') }}</li>
             </ul>
         </el-col>
         <el-col :sm="8" :xs="24" class="home_contact_a">
-            <p>Global Business Department</p>
+            <p>{{ $t('index.contact.global.contactTitle') }}</p>
             <ul>
-                <li>No. 89 Innovation Boulevard Tech Valley Industrial Park Boston, MA 02210</li>
-                <li style="margin-top: 20px;">E-mail: dayang@dayang.net</li>
+                <li>{{ $t('index.contact.global.contactAddress') }}</li>
+                <li style="margin-top: 20px;">{{ $t('index.contact.global.contactEmail') }}</li>
             </ul>
         </el-col>
         <el-col :sm="8" :xs="24" class="home_contact_a">
-            <p>North American Business Department</p>
+            <p>{{ $t('index.contact.northAmerican.contactTitle') }}</p>
             <ul>
-                <li>No. 89 Innovation Boulevard Tech Valley Industrial Park Boston, MA 02210</li>
-                <li style="margin-top: 20px;">E-mail: dayang@dayang.net</li>
+                <li>{{ $t('index.contact.northAmerican.contactAddress') }}</li>
+                <li style="margin-top: 20px;">{{ $t('index.contact.northAmerican.contactEmail') }}</li>
             </ul>
         </el-col>
     </el-row>
@@ -203,36 +203,36 @@
             
             <el-row :gutter="60">
             <el-col :sm="12" :xs="24">
-                <el-form-item label="How can we help? ">
-                <el-input v-model="form.username" placeholder="How can we help?"></el-input>
+                <el-form-item :label="$t('index.form.howcanwehelp')">
+                <el-input v-model="form.username" :placeholder="$t('index.form.howcanwehelp')"></el-input>
                 </el-form-item>
                 <div class="contactinfo_name">
-                    <el-form-item label="First Name ">
-                    <el-input v-model="form.FirstName" placeholder="First Name"></el-input>
+                    <el-form-item :label="$t('index.form.firstName')"> 
+                    <el-input v-model="form.FirstName" :placeholder="$t('index.form.firstName')"> </el-input>
                     </el-form-item>
-                    <el-form-item label="Last Name ">
-                    <el-input v-model="form.LastName" placeholder="Last Name"></el-input>
+                    <el-form-item :label="$t('index.form.lastName')"> 
+                    <el-input v-model="form.LastName" :placeholder="$t('index.form.lastName')"> </el-input>
                     </el-form-item>
                 </div>
-                <el-form-item label="Email ">
-                <el-input v-model="form.Email" placeholder="Email"></el-input>
+                <el-form-item :label="$t('index.form.formemail')">
+                <el-input v-model="form.Email" :placeholder="$t('index.form.formemail')"></el-input>
                 </el-form-item>
-                <el-form-item label="Company">
-                <el-input v-model="form.Company" placeholder="Company"></el-input>
+                <el-form-item :label="$t('index.form.company')">
+                <el-input v-model="form.Company" :placeholder="$t('index.form.company')"></el-input>
                 </el-form-item>
             </el-col>
        
             <el-col :sm="12" :xs="24">
-                <el-form-item label="Message">
+                <el-form-item :label="$t('index.form.formmessage')">
                 <el-input 
                     type="textarea" 
                     :rows="8" 
                     v-model="textarea" 
-                    placeholder="Message">
+                    :placeholder="$t('index.form.formmessage')">
                 </el-input>
                 </el-form-item>
                 <el-form-item>
-                <el-button type="primary" @click="submitForm" style="width: 100%; height: 50px; margin-top: 20px;font-size: 16px;">Send</el-button>
+                <el-button type="primary" @click="submitForm" style="width: 100%; height: 50px; margin-top: 20px;font-size: 16px;">{{ $t('index.form.submitButton') }}</el-button>
                 </el-form-item>
             </el-col>
             </el-row>
@@ -374,7 +374,7 @@
         },
         computed: {
             currentLangLabel() {
-            return this.$t("langLabel");
+            return this.$t("index.langLabel");
             }
         },
         

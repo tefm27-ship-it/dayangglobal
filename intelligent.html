@@ -336,12 +336,15 @@
     <script type="text/javascript" src="lib/index.js"></script>
     <!-- import swiper-->
     <script src="lib/swiper.min.js"></script>
-
+    <!-- import i18n -->
+    <script src="https://cdn.jsdelivr.net/npm/vue-i18n@8/dist/vue-i18n.min.js"></script>
 
     <!--  component  -->
     <script src="component/footer.js"></script>
     <script src="component/top.js"></script>
-     <script src="component/menu.js"></script>
+    <script src="component/menu.js"></script>
+    <script src="component/i18n-common.js"></script>
+
     
     <script>
         
@@ -424,8 +427,9 @@
 
         };
 
-        var Ctor = Vue.extend(Main);
-        new Ctor().$mount('#app');
+        // var Ctor = Vue.extend(Main);
+        // new Ctor().$mount('#app');
+        createApp(Main).$mount("#app");
     </script>
 
 

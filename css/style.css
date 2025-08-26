@@ -28,6 +28,7 @@
 
 body { font-family: 'Manrope','Segoe UI', -apple-system, system-ui, Roboto, sans-serif; }
 h1  { font-family: 'Urbanist','Segoe UI', -apple-system, system-ui, Roboto, sans-serif; }
+h2  { font-family: 'Urbanist','Segoe UI', -apple-system, system-ui, Roboto, sans-serif; }
 
 /* html{
     scroll-behavior: smooth;
@@ -201,6 +202,7 @@ li{
 .language{
     padding-right: 10px;
     font-weight: 800;
+    cursor: pointer;
     
 }
 .language i{
@@ -805,7 +807,7 @@ li{
     font-size: 36px;
 }
 .factory_data_t_r h1{
-    font-weight: 800;
+    font-weight: 700;
 }
 .factory_data_t_r li div{
     height: 25px;
@@ -1027,7 +1029,7 @@ li{
 }
 
 .factory_pt_l .web_title{
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 30px;
 }
 .factory_pt_l ul{
@@ -1216,7 +1218,7 @@ li{
     margin-top: 12px;
     font-size: 35px;
     max-width: 1200px;
-    font-weight: 800;
+    font-weight: 600;
     text-transform:math-auto;
 }
 
@@ -1682,7 +1684,7 @@ li{
     margin-top: 12px;
     font-size: 35px;
     max-width: 1200px;
-    font-weight: 800;
+    font-weight: 600;
     text-transform: math-auto;
 }
 
@@ -2849,6 +2851,9 @@ li{
     }
     .ai_soon ul li p {
         font-size: 14px;
+    }
+    .web_foot_r .language{
+        margin-left: 0;
     }
     
 

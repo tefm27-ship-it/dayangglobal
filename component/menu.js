@@ -17,11 +17,11 @@ Vue.component('site-menu', {
             <div class="nav_close" @click="closeDrawer"><i class="ri-close-line"></i></div>
           </div>
           <ul class="nav_list">
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="globalmarket.html">Global Partners</a></li>
-              <li><a href="factory.html">The World Factory Is Here</a></li>
-              <li><a href="intelligent.html">Numbers & Future</a></li>
-              <li><a href="customization.html">Personalized Customization</a></li>
+              <li><a href="about.html">{{ $t('menu.about') }}</a></li>
+              <li><a href="globalmarket.html">{{ $t('menu.globalPartners') }}</a></li>
+              <li><a href="factory.html">{{ $t('menu.worldFactory') }}</a></li>
+              <li><a href="intelligent.html">{{ $t('menu.numbersFuture') }}</a></li>
+              <li><a href="customization.html">{{ $t('menu.cstomization') }}</a></li>
           </ul>
           <div class="nav_bottom">
             <div class="web_foot_r menu_foot">
@@ -46,7 +46,7 @@ Vue.component('site-menu', {
       set(val) { this.$emit('input', val) }  
     },
     currentLangLabel() {
-      return this.$t("langLabel");
+      return this.$t("index.langLabel");
     }
   },
   

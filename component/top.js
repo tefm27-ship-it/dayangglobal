@@ -41,7 +41,7 @@ Vue.component('site-top', {
   },
   computed: {
     currentLangLabel() {
-      return this.$t("langLabel");
+      return this.$t("index.langLabel");
     }
   },
   methods: {
