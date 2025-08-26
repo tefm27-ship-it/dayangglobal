@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
   font-family: 'Urbanist';
   src: 
     url('../fonts/Urbanist-VariableFont_wght.woff2') format('woff2'),
@@ -13,7 +13,10 @@
     url('../fonts/Manrope-VariableFont_wght.ttf') format('truetype');
   font-style: normal;
   font-display: swap;
-} */
+}
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Urbanist:wght@400;600;700&display=swap');
 @import url('https://fonts.loli.net/css2?family=Manrope:wght@400;600;700&family=Urbanist:wght@400;600;700&display=swap');
 
@@ -261,6 +264,7 @@ li{
     line-height: 2.5em;
     transition: all 0.3s ease;
     color: black;
+    font-weight: bold;
 }
 .nav_list li:hover{
     font-size: 31px;
@@ -344,6 +348,7 @@ li{
     color: white;
     font-size: 108px;
     line-height: 1;
+    font-weight: bold;
 }
 
 .home_banner p{
@@ -1066,6 +1071,9 @@ li{
 .factory_list_name p{
     margin-top: 10px;
 }
+.factory_list_name h1{
+    font-weight: bold;
+}
 
 
 .factory_list_photo{
@@ -1139,10 +1147,12 @@ li{
 }
 .customization_billboard h1{
     font-size: 110px;
+    font-weight: bold;
 }
 
 .customization_billboard h2{
     font-size: 86px;
+    font-weight: bold;
 }
 
 
@@ -1387,6 +1397,7 @@ li{
 .intelligent_title h1{
     font-size: 42px;
     padding-bottom: 15px;
+    font-weight: bold;
 }
 .intelligent_title p{
     font-size: 18px;
@@ -1531,6 +1542,7 @@ li{
     max-width: 590px;
     font-size: 42px;
     padding-bottom: 15px;
+    font-weight: bold;
 }
 .new3d_title p{
     text-align: center;
@@ -1586,7 +1598,10 @@ li{
     max-width: 780px;
     text-align: center;
     padding-bottom: 90px;
-    padding-top: 50px;
+
+}
+.new3dbtn_title h1{
+    font-weight: bold;
 }
 
 .new3d_img{
@@ -1648,6 +1663,7 @@ li{
 .ai_bg h1{
     font-size: 123px;
     text-align: center;
+    font-weight: bold;
 }
 
 .ai_bg p{
@@ -2230,9 +2246,6 @@ li{
     }
     .web_top{
         padding-left: 25px;
-    }
-    .language{
-        display: none;
     }
     .web_head ul{
         overflow: auto;
