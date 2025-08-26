@@ -20,10 +20,10 @@
     <site-menu v-model="drawer"></site-menu>
 
     <div class="container_box web_head">
-        <h1 class="web_bigtitle">The world factory is here</h1>
+        <h1 class="web_bigtitle">{{ $t('factory.pageName') }}</h1>
         <ul>
-            <li @click="scrollTo('point-Factories')">Factories & Production Capacity</li>
-            <li @click="scrollTo('point-Quality')">Quality System</li>
+            <li @click="scrollTo('point-Factories')">{{ $t('factory.pageNav.Nav1') }}</li>
+            <li @click="scrollTo('point-Quality')">{{ $t('factory.pageNav.Nav2') }}</li>
         </ul>
     </div>
 
@@ -31,26 +31,23 @@
 
     <div class="container_box factory_data_t" ref="point-Factories">
         <div class="factory_data_t_l">
-            <h1 class="web_title">
-                Factories & Production
-                <br>Capacity Profile
-            </h1>
+            <h1 class="web_title" v-html="$t('factory.smartFactoryTitle')"></h1>
         </div>
         <ul class="factory_data_t_r">
             <li>
                 <div><img src="images/icon-jacket.png" height="100%" alt=""></div>
                 <h1 class="web_title">270,000</h1>
-                <p>Formal wear</p>
+                <p>{{ $t('index.capacity.formalWear.DataFactorycategory') }}</p>
             </li>
             <li>
                 <div><img src="images/icon-hoodie.png" height="100%" alt=""></div>
                 <h1 class="web_title">50,000</h1>
-                <p>Casual Wear</p>
+                <p>{{ $t('index.capacity.casualWear.DataFactorycategory') }}</p>
             </li>
             <li>
                 <div><img src="images/icon-shirt.png" height="100%" alt=""></div>
                 <h1 class="web_title">50,000</h1>
-                <p>Shirts</p>
+                <p>{{ $t('index.capacity.shirts.DataFactorycategory') }}</p>
             </li>
         </ul>
     </div>
@@ -60,11 +57,11 @@
         <div class="factory_pt_l">
             <ul>
                 <h1 class="web_title">7</h1>
-                <p>7 advanced factories forming a powerful production matrix</p>
+                <p>{{ $t('index.advancedFactory') }}</p>
             </ul>
             <ul>
                 <h1 class="web_title">4500+</h1>
-                <p>Over 4,500 top-tier local workers ensuring quality and efficiency</p>
+                <p>{{ $t('index.workersFactory') }}</p>
             </ul>
         </div>
         <div class="factory_pt_r">
@@ -77,78 +74,34 @@
 
     <div class="container_box factory_notice">
         <h1 class="web_title">
-            Intelligent production line & state of art machinery
+            {{ $t('factory.smartFactoryDescTitle') }}
         </h1>
-        <h2>We combine smart automation and precision engineering to deliver efficient, sustainable manufacturing excellence.</h2>
+        <h2>{{ $t('factory.smartFactoryDesc') }}</h2>
     </div>
 
     <div class="container_box factory_listbox">
-        <div class="factory_list">
+
+        <div v-for="(factoryItem, index) in $t('factory.factoryList')" :key="index" class="factory_list">
             <div class="factory_list_name">
-                <h1>Gert Factory</h1>
-                <p>Specialized in Women's Formal & Casual Wear, Outerwear, etc.</p>
+                <h1>{{ factoryItem.factoryName }}</h1>
+                <p>{{ factoryItem.factoryDescription }}</p>
             </div>
             <div class="factory_list_photo">
-                <img src="images/Gert.jpg" alt="">
+                <img :src="factoryItem.image" :alt="factoryItem.factoryName">
             </div>
         </div>
-        <div class="factory_list">
-            <div class="factory_list_name">
-                <h1>Yangerte Factory</h1>
-                <p>Specialized in high-end men's formal wear, boasting Italian bespoke MTM and premium Italian-inspired RTW lin es.</p>
-            </div>
-            <div class="factory_list_photo">
-                <img src="images/Yangerte .jpg" alt="">
-            </div>
-        </div>
-        <div class="factory_list">
-            <div class="factory_list_name">
-                <h1>Moda Factory</h1>
-                <p>Modern intelligent manufacturing benchmark, MTM production, industry's largest warehousing & logistics.</p>
-            </div>
-            <div class="factory_list_photo">
-                <img src="images/Moda.jpg" alt="">
-            </div>
-        </div>
-        <div class="factory_list">
-            <div class="factory_list_name">
-                <h1>Dert Factory: A</h1>
-                <p>leading global MTM manufacturer, empowering top MTM retailers to achieve global leadership.</p>
-            </div>
-            <div class="factory_list_photo">
-                <img src="images/DertA.jpg" alt="">
-            </div>
-        </div>
-        <div class="factory_list">
-            <div class="factory_list_name">
-                <h1>Naierte Factory</h1>
-                <p>Men's MTM tailoring (half & full canvas),MTM industry pioneer empowering client growth.</p>
-            </div>
-            <div class="factory_list_photo">
-                <img src="images/Naierte.jpg" alt="">
-            </div>
-        </div>
-        <div class="factory_list">
-            <div class="factory_list_name">
-                <h1>Gert Shirting Factory</h1>
-                <p>High-tech-driven with multiple lines covering high-end to mid-range markets.</p>
-            </div>
-            <div class="factory_list_photo">
-                <img src="images/GertShirting.jpg" alt="">
-            </div>
-        </div>
+
     </div>
 
 
     <div class="container_box quality" ref="point-Quality">
-        <h1 class="web_title">Quality System</h1>
+        <h1 class="web_title">{{ $t('factory.qualitySystemTitle') }}</h1>
         <ul>
-            <h2>Dayang upholds sustainability. Our certifications reflect our commitment to quality, innovation, and industry-leading standards.</h2>
+            <h2>{{ $t('factory.qualitySystemDescription') }}</h2>
             <img src="images/quality-p.jpg" width="100%" alt="">
-            <li>Robust quality management: In-house piece-by-piece inspection, AQL 2.5 compliance & cert ified lab</li>
-            <li>Comprehensive integrity framework in operations</li>
-            <li>Extensive international certifications (includingenvironmental & green)</li>
-            <li>Strict adherence to sustainable standards</li>
+            <li v-for="(quality, index) in $t('factory.qualityList')" :key="index">
+                {{ quality }}
+            </li>
         </ul>
     </div>
 

@@ -77,16 +77,6 @@ const messages = {
       }
     },
 
-    
-
-
-
-
-
-
-
-
-
 
 
     about: {
@@ -154,14 +144,82 @@ const messages = {
         ]
       }
     },
-    
+
+
+
+
+    globalMarket: {
+        pageName:"Global Presence & Market Share",
+        pageNav:{
+          Nav1:"Global Partners",
+          Nav2:"Global Market",
+          Nav3:"International Creative Team",
+        },
+        partnerDesc: "Partnering with 100+ top brands worldwide to deliver premium products. Rigorous standards, innovative craftsmanship, and international certifications ensure excellence for global consumers.",
+        marketCoverage: "The global market spans major regions including Asia, Europe, North America and Oceania.",
+        marketShareTitle: "Market Share",
+        marketShareData: {
+          northAmerica: "North America",
+          europe: "Europe",
+          asia: "Asia",
+          australia: "Australia"
+        },
+    },
 
 
 
 
 
-
-
+    factory: {
+        pageName: "The World Factory Is Here",
+        pageNav: {
+          Nav1: "Factories & Production Capacity",
+          Nav2: "Quality System",
+        },
+        smartFactoryTitle: "Factories & Production <br> Capacity Profile",
+        smartFactoryDescTitle: "Intelligent Production Line & State Of Art Machinery",
+        smartFactoryDesc: "We combine smart automation and precision engineering to deliver efficient, sustainable manufacturing excellence.",
+        factoryList:[
+          {
+            factoryName:"Gert Factory",
+            factoryDescription:"Specialized in Women's Formal & Casual Wear, Outerwear, etc.",
+            image: "images/Gert.jpg"
+          },
+          {
+            factoryName:"Yangerte Factory",
+            factoryDescription:"Specialized in high-end men's formal wear, boasting Italian bespoke MTM and premium Italian-inspired RTW lin es.",
+            image: "images/Yangerte.jpg"
+          },
+          {
+            factoryName:"Moda Factory",
+            factoryDescription:"Modern intelligent manufacturing benchmark, MTM production, industry's largest warehousing & logistics.",
+            image: "images/Moda.jpg"
+          },
+          {
+            factoryName:"Dert Factory: A",
+            factoryDescription:"leading global MTM manufacturer, empowering top MTM retailers to achieve global leadership.",
+            image: "images/DertA.jpg"
+          },
+          {
+            factoryName:"Naierte Factory",
+            factoryDescription:"Men's MTM tailoring (half & full canvas),MTM industry pioneer empowering client growth.",
+            image: "images/Naierte.jpg"
+          },
+          {
+            factoryName:"Gert Shirting Factory",
+            factoryDescription:"High-tech-driven with multiple lines covering high-end to mid-range markets.",
+            image: "images/GertShirting.jpg"
+          },
+        ],
+        qualitySystemTitle:"Quality System",
+        qualitySystemDescription:"Dayang upholds sustainability. Our certifications reflect our commitment to quality, innovation, and industry-leading standards.",
+        qualityList:[
+            "Robust quality management: In-house piece-by-piece inspection, AQL 2.5 compliance & cert ified lab",
+            "Comprehensive integrity framework in operations",
+            "Extensive international certifications (includingenvironmental & green)",
+            "Strict adherence to sustainable standards",
+        ],
+    },
 
 
 
@@ -173,6 +231,21 @@ const messages = {
 
 
   },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   zh: {
 
@@ -256,14 +329,6 @@ const messages = {
 
 
 
-
-
-
-
-
-
-
-
     about: {
       pageName:"关于大杨",
       pageNav:{
@@ -332,17 +397,81 @@ const messages = {
 
 
 
+    globalMarket: {
+      pageName: "全球业务与市场份额", 
+      pageNav: {
+        Nav1: "全球合作伙伴", 
+        Nav2: "全球市场", 
+        Nav3: "国际创意团队", 
+      },
+      partnerDesc: "与全球100多个顶级品牌合作，提供优质产品。严格的标准、创新的工艺和国际认证确保为全球消费者提供卓越产品。", 
+      marketCoverage: "我们的业务全球市场覆盖了亚洲、欧洲、北美和大洋洲等主要地区。", 
+      marketShareTitle: "全球市场份额", 
+      marketShareData: {
+        northAmerica: "北美",
+        europe: "欧洲",
+        asia: "亚洲",
+        australia: "澳大利亚",
+      }
+    },
+
+    
+
+    factory: {
+      pageName: "世界工厂就在这里",
+      pageNav: {
+        Nav1: "工厂与生产能力",
+        Nav2: "质量体系认证",
+      },
+      smartFactoryTitle: "工厂及生产能力<br>概况",
+      smartFactoryDescTitle: "智能生产线与最先进的机械设备",
+      smartFactoryDesc: "我们将智能自动化与精密工程相结合，以实现高效、可持续的卓越制造。",
+      factoryList: [
+        {
+          factoryName: "格尔特工厂",
+          factoryDescription: "专注于女士正装与休闲装、外套等。",
+          image: "images/Gert.jpg"
+        },
+        {
+          factoryName: "洋尔特工厂",
+          factoryDescription: "专注于高端男士正装，拥有意大利定制（MTM）和高端意大利风格成衣（RTW）系列。",
+          image: "images/Yangerte.jpg"
+        },
+        {
+          factoryName: "贸大工厂",
+          factoryDescription: "现代智能制造标杆，MTM生产，行业最大的仓储与物流。",
+          image: "images/Moda.jpg"
+        },
+        {
+          factoryName: "德尔特工厂 A",
+          factoryDescription: "全球领先的MTM（大规模定制）制造商，助力顶级MTM零售商实现全球领先地位。",
+          image: "images/DertA.jpg"
+        },
+        {
+          factoryName: "耐尔特工厂",
+          factoryDescription: "男士定制服装（半幅与全幅）定制服装行业的先驱，助力客户成长。",
+          image: "images/Naierte.jpg"
+        },
+        {
+          factoryName: "格尔特衬衫工厂",
+          factoryDescription: "以高科技为驱动，产品线覆盖高端至中端市场。",
+          image: "images/GertShirting.jpg"
+        },
+      ],
+      qualitySystemTitle: "质量体系认证",
+      qualitySystemDescription: "大杨坚持可持续发展。我们的认证体现了我们对质量、创新和行业领先标准的承诺。",
+      qualityList: [
+        "稳健的质量管理：内部逐件检验，符合AQL 2.5标准，且为认证实验室",
+        "运营中的全面权威框架",
+        "广泛的国际认证（包括环境与绿色相关）",
+        "严格遵循可持续发展标准",
+      ],
+    },
 
 
 
 
-
-
-
-
-
-
-
+    
 
 
 
@@ -362,6 +491,8 @@ const messages = {
 
 
   },
+
+
 };
 
 
@@ -380,3 +511,23 @@ function createApp(mainOptions) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+  

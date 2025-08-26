@@ -20,11 +20,11 @@
     <site-menu v-model="drawer"></site-menu>
 
     <div class="container_box web_head">
-        <h1 class="web_bigtitle">Global Presence & Market Share</h1>
+        <h1 class="web_bigtitle">{{ $t('globalMarket.pageName') }}</h1>
         <ul>
-            <li @click="scrollTo('point-Partners')">Global Partners</li>
-            <li @click="scrollTo('point-Market')">Global Market</li>
-            <li @click="scrollTo('point-Team')">International Creative Team</li>
+            <li @click="scrollTo('point-Partners')">{{ $t('globalMarket.pageNav.Nav1') }}</li>
+            <li @click="scrollTo('point-Market')">{{ $t('globalMarket.pageNav.Nav2') }}</li>
+            <li @click="scrollTo('point-Team')">{{ $t('globalMarket.pageNav.Nav3') }}</li>
         </ul>
     </div>
 
@@ -43,7 +43,7 @@
 
     <div class="container_box about_footprints" ref="point-Partners">
         <h1 class="web_title footprints_title">
-            Partnering with 100+ top brands worldwide to deliver premium products. Rigorous standards, innovative craftsmanship, and international certifications ensure excellence for global consumers.
+            {{ $t('globalMarket.partnerDesc') }}
         </h1>
     </div>
 
@@ -54,98 +54,57 @@
     </div>
 
     <div class="container_box hpartners_market" ref="point-Market">
-        <p class="subtitle">Global Presence & Market Share</p>
-        <h1 class="home_title">The global market spans major regions including Asia, Europe, North America and Oceania.</h1>
+        <p class="subtitle">{{ $t('globalMarket.pageName') }}</p>
+        <h1 class="home_title">{{ $t('globalMarket.marketCoverage') }}</h1>
     </div>
     <div class="container_box world_image"></div>
     <div class="world_data">
         <ul>
-            <li class="world_share" >Market Share</li>
+            <li class="world_share" >{{ $t('globalMarket.marketShareTitle') }}</li>
             <li>
-                <p>North America</p>
+                <p>{{ $t('globalMarket.marketShareData.northAmerica') }}</p>
                 <h1>35.8%</h1>
             </li>
             <li>
-                <p>Europe</p>
+                <p>{{ $t('globalMarket.marketShareData.europe') }}</p>
                 <h1>13.2%</h1>
             </li>
             <li>
-                <p>Asia</p>
+                <p>{{ $t('globalMarket.marketShareData.asia') }}</p>
                 <h1>48.3%</h1>
             </li>
             <li>
-                <p>Australia</p>
+                <p>{{ $t('globalMarket.marketShareData.australia') }}</p>
                 <h1>2.7%</h1>
             </li>
         </ul>
     </div>
 
 
- 
 
 
 
-
-
-   
-
-    
-
-
-    <div class="myTeam" ref="point-Team">
+    <div class="myTeam" ref="point-team">
         <div class="container_box team_title">
-            <h1 class="web_title">International <br> Creative Team</h1>
+            <h1 class="web_title" v-html="$t('about.internationalTeam.heading')"></h1> 
             <p class="subtitle team_p">
-                "Bringing together top designers from Italy, the UK, Japan, and France, our international creative team merges diverse cultural perspectives with exceptional creativity to infuse the brand with global design language and innovative energy."
+                {{ $t('about.internationalTeam.description') }}
             </p>
         </div>
+
         <ul class="team_designer">
-            <li>
+            <li
+                v-for="(member, index) in $t('about.internationalTeam.members')"
+                :key="index"
+                :style="index % 2 === 1 ? 'flex-direction: row-reverse;' : ''"
+                class="designer_item">
                 <div class="designer_image">
-                    <img src="images/Mauro.jpg" width="100%" alt="">
+                    <img :src="member.image" width="100%" :alt="member.name">
                 </div>
                 <div class="designer_introduce">
-                    <p class="subtitle">Creative Director & Fashion Designer(CD & FD)</p>
-                    <h1 class="web_title designer_name">Mauro Ravizza Krieger</h1>
-                    <p class="subtitle  designer_info">
-                        Founded a 1998 fashion/accessories studio (clients including Maxmara); ex-Creative Director at Pal Zileri (2014–2017, led design strategies); spe-cializes in trend analysis, offering global brands professional design services.
-                    </p>
-                </div>
-            </li>
-            <li style="flex-direction: row-reverse;">
-                <div class="designer_image">
-                    <img src="images/Belardo.jpg" width="100%" alt="">
-                </div>
-                <div class="designer_introduce">
-                    <p class="subtitle">Italian Pattern Making Expert</p>
-                    <h1 class="web_title designer_name">Belardo Walter</h1>
-                    <p class="subtitle  designer_info">
-                        Diplomas from Milano Secoli (Men'sWear) & Varese Porta; worked with Dolce & Gabbana, Zegna, Fendi; headed Falconeri menswear pattern making, specializing in luxury technical design
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="designer_image">
-                    <img src="images/Kurosaki.jpg" width="100%" alt="">
-                </div>
-                <div class="designer_introduce">
-                    <p class="subtitle">Apparel Tech Expert</p>
-                    <h1 class="web_title designer_name">Kurosaki</h1>
-                    <p class="subtitle  designer_info">
-                        11yrs at Vilene (R&D, 600+ women's pieces); 22yrs at United Arrows (led tech: pattern to production, Tech Chief till Jan 2024, 6 brands upgrad-ed); certified Japanese textile QC & men's/women's craftsman
-                    </p>
-                </div>
-            </li>
-            <li style="flex-direction: row-reverse;">
-                <div class="designer_image">
-                    <img src="images/Gerrica.jpg" width="100%" alt="">
-                </div>
-                <div class="designer_introduce">
-                    <p class="subtitle">Men's Suit Technical Expert</p>
-                    <h1 class="web_title designer_name">Gerrica Giache</h1>
-                    <p class="subtitle  designer_info">
-                        Began as Creazioni GEII'S Technical Di-rector Assistant; 25yrs as CANALI Men's Suits Technical Director. Spe-cializes in men's suit production, ex-celling in craftsmanship & technology to optimize quality/output
-                    </p>
+                    <p class="subtitle">{{ member.role }}</p>
+                    <h1 class="web_title designer_name">{{ member.name }}</h1>
+                    <p class="subtitle designer_info">{{ member.bio }}</p>
                 </div>
             </li>
         </ul>
