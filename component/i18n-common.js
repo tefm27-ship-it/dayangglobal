@@ -115,7 +115,7 @@ const messages = {
 
       internationalTeam: {
         heading: "International <br> Creative Team",
-        description: "Bringing together top designers from Italy, the UK, Japan, and France, our international creative team merges diverse cultural perspectives with exceptional creativity to infuse the brand with global design language and innovative energy.",
+        description: "\"Bringing together top designers from Italy, the UK, Japan, and France, our international creative team merges diverse cultural perspectives with exceptional creativity to infuse the brand with global design language and innovative energy.\"",
         members: [
           {
             role: "Creative Director & Fashion Designer (CD & FD)",
@@ -223,10 +223,218 @@ const messages = {
 
 
 
+    customization: {
+      pageName: "Personalized customization",
+      pageNav: {
+        Nav1: "Making Personalized",
+        Nav2: "Fully Customization",
+        Nav3: "Distinctions",
+      },
+      misc: {
+        rightNow: "Right now,",
+        doubleLife: "Double Life",
+      },
+      making: {
+        makingTitle: "Immersive Fun Making <br> Personalized",
+        title: "Custom styles with tailored features, unique linings, and personalized measurements for repeat orders.",
+        items: {
+          customPatterns: "Custom Patterns",
+          measurementProfiles: "Measurement Profiles for Repeat Orders",
+          personalStyle: "Personal Style Options",
+          tailoredFeatures: "Tailored Features",
+          uniqueLining: "Unique Lining Designs",
+        },
+        repeatLine:
+          "Custom styles with tailored features, unique linings, and personalized measurements for repeat orders.",
+      },
+      fully: {
+        Descriptiontitle: "Fully Customization",
+        descDescription:
+          "Your style, your rules: limitless design options for truly one-of-a-kind suits. Each garment is precision tailored by skilled artisans with an obsessive attention to detail.",
+      },
+      distinctions: {
+        distinctionsTitle: "Distinctions",
+        items: [
+          {
+            title: "Dependable and Fast:",
+            desc: "prompt, reliable delivery.",
+          },
+          {
+            title: "Strategic Partners for Success:",
+            desc: "forging win-win alliances over the long term.",
+          },
+          {
+            title: "High-Value Quality:",
+            desc: "premium products at competitive prices.",
+          },
+          {
+            title: "Global Leader:",
+            desc: "ranking top in the global tailoring industry.",
+          },
+          {
+            title: "Tech Meets Craft:",
+            desc: "merging traditional skills with AI precision.",
+          },
+          {
+            title: "Great Comfort:",
+            desc: "engineered for a supremely comfortable fit.",
+          },
+        ],
+      },
+    },
 
 
 
 
+
+
+    intelligent: {
+      pageTitle: "Full Systematization",
+      subtitle: "The Future Is Now",
+      pageNav: {
+        Nav1: "Full-Systematization",
+        Nav2: "Future Concept",
+      },
+
+      ustyylitSystem: {
+        title: "Ustyylit System",
+        tagline: "USTYYLIT is an online platform for custom apparel brands, connecting design, fabric selection, and production in one streamlined workflow.",
+        items: {
+          items1: {
+            title: "Full-Process Digital Management",
+            desc: "Integrated design to production for higher efficiency and fewer errors."
+          },
+          items2: {
+            title: "3D Visualization",
+            desc: "Real-time 3D preview of styles and fabrics."
+          },
+          items3: {
+            title: "Remote Collaboration",
+            desc: "Remote style selection and customization."
+          },
+          items4: {
+            title: "Fast Factory Ordering",
+            desc: "Direct order submission to production line."
+          },
+          items5: {
+            title: "Flexible Customization",
+            desc: "Various styles, fabrics, and accessories options."
+          },
+          items6: {
+            title: "Data-Driven Decisions",
+            desc: "Optimized design and production with big data."
+          },
+        }
+      },
+
+      customLiningsDesign: {
+        title: "Custom Linings Design",
+        tagline: "The Custom Lining feature aims to offer customers more personalized options, enhancing the uniqueness of bespoke garments and strengthening brand identity.",
+        
+        items: {
+          items1: {
+            title: "Personalized Pattern Design",
+            desc: "Allows uploading custom patterns to create unique lining styles."
+          },
+          items2: {
+            title: "Easy-to-Use Design Tools",
+            desc: "No professional design skills needed; easily crop, scale, and arrange patterns."
+          },
+          items3: {
+            title: "Real-Time Preview",
+            desc: "Instantly preview lining designs to ensure expectations are met."
+          },
+          items4: {
+            title: "Enhances Brand Identity",
+            desc: "Custom linings enhance garment uniqueness and strengthen brand image."
+          },
+          items5: {
+            title: "Fast Feedback and Revision",
+            desc: "Professional designers provide feedback within 24-48 hours after upload."
+          },
+        }
+
+      },
+
+
+
+      threeDVisualization: {
+        title: "3D Visualization",
+        tagline: "A 3D customization platform for fashion brands — enabling remote style selection, real-time fabric preview, and direct ordering to production.",
+        slogan: "3D customization: design, preview, and create with ease",
+        sloganList:{
+            list1:"3D Fitting & Real-Time Preview",
+            list2:"Personalized Custom Design",
+            list3:"Direct Save to Production Order"
+        }
+      },
+
+      futureBanner: "The Future Is Now.",
+
+      futureConcept:{
+        title: "Future Concept",
+        Description:"Innovate the fashion industry! Single item minimum order, intelligent design, virtual try on, flexible supply chain to achieve on-demand fast response, covering from finished clothing to high-end orders, meeting personalized needs.",
+      
+        main:{
+          main1: {
+            title: "MTO Casual Wear Production",
+            desc: "Made-to-order casualwear - Produce only when ordered to minimize inventory"
+          },
+          main2: {
+            title: "Virtual Try-On Technology",
+            desc: "Photo-powered garment simulation - Instantly visualize clothing try-on effects through AI-generated images & videos"
+          },
+          main3: {
+            title: "Rapid Replenishment Program",
+            desc: "Fast restocking program - Quickly respond to market demand with shorter lead times"
+          },
+          main4: {
+            title: "Photo-Based Measurement System",
+            desc: "AI body measurement - Smart sizing through photo analysis"
+          },
+        },
+        comingSoon: "Coming Soon",
+        items: [
+            {
+              title: "AI-Empowered Franchising Model",
+              desc: "AI-powered franchise system - Intelligent technology-driven franchising ecosystem",
+            },
+            {
+              title: "Ultra-Low MOQ for Small Batches(1 SKU Minimum)",
+              desc: "Ultra-low minimum order quantity - Production available from just 1 single SKU",
+            },
+            {
+              title: "Rapid Replenishment Program",
+              desc: "Fast restocking program - Quickly respond to market demand with shorter lead times",
+            },
+            {
+              title: "MTO Casual Wear Production",
+              desc: "Made-to-measure formalwear - Premium customized tailoring service",
+            },
+            {
+              title: "MTM Formal Wear Tailoring",
+              desc: "Made-to-measure formalwear - Premium customized tailoring service",
+            },
+            {
+              title: "AI-Driven Design Solutions",
+              desc: "AI-powered design - Algorithm-generated fashion styles for efficient creation",
+            },
+            {
+              title: "Virtual Try-On Technology",
+              desc: "Photo-powered garment simulation - Instantly visualize clothing try-on effects through AI-generated images & videos",
+            },
+            {
+              title: "Photo-Based Measurement System",
+              desc: "AI body measurement - Smart sizing through photo analysis",
+            },
+            {
+              title: "Integrated Multi-Business Model Ecosystem",
+              desc: "Unified business ecosystem - Seamless omnichannel retail integration",
+            },
+        ],
+
+      },
+    },
 
 
 
@@ -342,6 +550,7 @@ const messages = {
       description1: "大杨集团有限公司成立于1979年9月，是中国国际竞争力最强的男装企业之一。集团拥有24家子公司，年产西装超过1000万套。<br><br> 大杨集团因其“中国制造的最高品质男装”而在业内享有盛誉，并成功开发了一个智能订购平台，为全球客户提供服务。其专业的男装制造技术已获得国际上的广泛认可。",
       description2:"我们的产品远销美国、加拿大、荷兰、英国、德国、意大利、日本、韩国、澳大利亚等20多个国家和地区，在业内享有盛誉，成为中国最大的男装出口企业。",
       footprints: {
+        pagesubtitle:"发展历程",
         heading: "大杨集团于1979年在大连成立，从服装生产起步，逐渐发展成为全球男装领域的领军企业。该集团于20世纪90年代推出了“TRANDS”品牌，并在21世纪开创了智能制造的先河。",
         timeline: {
           "2024": "青山品牌累计RTW（成衣）销量突破2000万件；国际设计及营销团队在时装秀上首次亮相。",
@@ -470,21 +679,212 @@ const messages = {
 
 
 
+    customization: {
+      pageName: "个性化定制",
+      pageNav: {
+        Nav1: "个性化体验",
+        Nav2: "完全定制",
+        Nav3: "独特优势",
+      },
+      misc: {
+        rightNow: "开启，",
+        doubleLife: "双面生活",
+      },
+      making: {
+        makingTitle: "沉浸式乐趣，打造<br> 个性化体验",
+        title:
+          "定制款式，配备量身定制的功能、独特衬里，并为重复订单提供个性化尺寸。",
+        items: {
+          customPatterns: "个性化版型",
+          measurementProfiles: "定制尺码库管理",
+          personalStyle: "个人风格选项",
+          tailoredFeatures: "定制化细节",
+          uniqueLining: "独特里衬设计",
+        },
+        repeatLine:
+          "匠心铸就卓越品质，融合创新与严苛标准，塑造值得信赖的国际化品牌形象。",
+      },
+      fully: {
+        Descriptiontitle: "完全定制",
+        descDescription:
+          "您的风格，您的规则：无限设计选择，打造独一无二的西装。每一件服装都由技艺精湛的工匠精心裁剪，对细节的关注近乎痴迷。",
+      },
+      distinctions: {
+        distinctionsTitle: "独特优势",
+        items: [
+          {
+            title: "可靠且快速：",
+            desc: "快速、可靠的交付。",
+          },
+          {
+            title: "战略合作伙伴，共铸成功：",
+            desc: "长期共赢的合作关系。",
+          },
+          {
+            title: "高性价比品质：",
+            desc: "优质产品，价格具竞争力。",
+          },
+          {
+            title: "全球领导者：",
+            desc: "位列全球定制裁缝行业前列。",
+          },
+          {
+            title: "科技与匠心：",
+            desc: "融合传统工艺与 AI 精准技术。",
+          },
+          {
+            title: "卓越舒适：",
+            desc: "为极致舒适的版型与穿着体验而设计。",
+          },
+        ],
+      },
+    },
 
-    
 
 
 
 
+    intelligent: {
+      pageTitle: "全面系统化",
+      subtitle: "现在，未来已来",
+      pageNav: {
+        Nav1: "全面系统化",
+        Nav2: "未来概念",
+      },
 
+      ustyylitSystem: {
+        title: "USTYYLIT系统",
+        tagline: "USTYYLIT是一个定制服装品牌的在线平台，将设计、面料选择和生产整合到一个高效的工作流程中。",
+        items: {
+          items1: {
+            title: "全流程数字化管理",
+            desc: "从设计到生产的一体化流程，以提高效率并减少错误。"
+          },
+          items2: {
+            title: "3D 可视化",
+            desc: "款式与面料的实时 3D 预览。"
+          },
+          items3: {
+            title: "远程协作",
+            desc: "远程进行款式选择与个性化定制。"
+          },
+          items4: {
+            title: "快速工厂订货",
+            desc: "订单可直接提交到生产线。"
+          },
+          items5: {
+            title: "灵活定制",
+            desc: "多种款式、面料与配件选择。"
+          },
+          items6: {
+            title: "数据驱动决策",
+            desc: "通过大数据优化设计与生产。"
+          },
+        }
+      },
 
+      customLiningsDesign: {
+        title: "个性化里衬设计",
+        tagline: "里定制衬里功能旨在为客户提供更多个性化选择，增强定制服装的独特性，并强化品牌标识。",
+        items: {
+          items1: {
+            title: "个性化图案设计",
+            desc: "支持上传自定义图案，打造独一无二的里衬样式。"
+          },
+          items2: {
+            title: "易用设计工具",
+            desc: "无需专业设计技能，可轻松裁剪、缩放和排版图案。"
+          },
+          items3: {
+            title: "实时预览",
+            desc: "即时预览里衬设计，确保符合预期效果。"
+          },
+          items4: {
+            title: "强化品牌识别",
+            desc: "定制里衬提升服装独特性，强化品牌形象。"
+          },
+          items5: {
+            title: "快速反馈与修订",
+            desc: "专业设计师会在作品上传后的24至48小时内提供反馈。"
+          },
+        }
+      },
 
+      threeDVisualization: {
+        title: "3D 设计试穿",
+        tagline: "面向时尚品牌的 3D 定制平台 —— 支持远程款式选择、实时面料预览，甚至直接下单到生产环节。",
+        slogan: "3D定制：轻松设计、预览和创建。",
+        sloganList: {
+          list1: "3D 试穿与实时预览",
+          list2: "个性化定制设计",
+          list3: "直接保存为生产订单"
+        }
+      },
 
+      futureBanner: "现在,未来已来。",
 
-
-
-
-
+      futureConcept: {
+        title: "未来概念",
+        Description: "革新时尚产业！单件起订，智能设计，虚拟试穿，灵活的供应链实现按需快速响应，涵盖从成衣到高端订单，满足个性化需求。",
+        main: {
+          main1: {
+            title: "休闲装 MTO 定制生产",
+            desc: "定制休闲装定制 —— 仅在接到订单时生产，最大限度减少库存"
+          },
+          main2: {
+            title: "虚拟试衣技术",
+            desc: "基于照片的服装模拟 —— 通过 AI 生成的图像与视频即时可视化试穿效果"
+          },
+          main3: {
+            title: "快速补货计划",
+            desc: "快速补货 —— 缩短交货周期，快速响应市场需求"
+          },
+          main4: {
+            title: "基于照片的测量系统",
+            desc: "人工智能身体测量 —— 通过照片分析实现智能尺寸"
+          },
+        },
+        comingSoon: "即将开启",
+        items: [
+          {
+            title: "AI 驱动的特许经营模式",
+            desc: "AI 赋能的加盟体系 —— 技术驱动的智能化加盟生态"
+          },
+          {
+            title: "超低起订量（1 件起订）",
+            desc: "超低最小起订量 —— 从 1 件 SKU 即可启动生产"
+          },
+          {
+            title: "快速补货计划",
+            desc: "快速补货 —— 缩短交货周期，快速响应市场需求"
+          },
+          {
+            title: "休闲装 MTO 定制生产",
+            desc: "定制休闲装定制 —— 仅在接到订单时生产，最大限度减少库存"
+          },
+          {
+            title: "正装 MTM 定制裁缝",
+            desc: "正装量身定制 —— 高端个性化裁缝服务"
+          },
+          {
+            title: "AI 驱动设计方案",
+            desc: "AI 设计 —— 算法生成时尚款式，实现高效创作"
+          },
+          {
+            title: "虚拟试衣技术",
+            desc: "基于照片的服装模拟 —— 通过 AI 生成的图像与视频即时可视化试穿效果"
+          },
+          {
+            title: "基于照片的测量系统",
+            desc: "人工智能身体测量 —— 通过照片分析实现智能尺寸"
+          },
+          {
+            title: "多业务模型一体化生态",
+            desc: "统一业务生态 —— 无缝整合全渠道零售模式"
+          },
+        ],
+      },
+    },
 
 
 
@@ -492,8 +892,12 @@ const messages = {
 
   },
 
-
 };
+
+
+
+
+
 
 
 
@@ -508,26 +912,3 @@ function createApp(mainOptions) {
   return new Ctor({ i18n });
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-  

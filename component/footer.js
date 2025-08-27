@@ -1,4 +1,4 @@
-// 定义全局组件
+
 Vue.component('site-footer', {
   template: `
     <div class="web_foot">

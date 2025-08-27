@@ -203,7 +203,9 @@ li{
     padding-right: 10px;
     font-weight: 800;
     cursor: pointer;
-    
+}
+.lang-zh .language{
+    font-weight: 500;
 }
 .language i{
     font-size: 18px;
@@ -354,6 +356,10 @@ li{
     line-height: 1;
     font-weight: bold;
 }
+.lang-zh .home_banner h1{
+    letter-spacing: 6px;
+    line-height: 1.1;
+}
 
 .home_banner p{
     position: absolute;
@@ -365,7 +371,9 @@ li{
     font-weight: 600;
     letter-spacing: 0.5px;
 }
-
+.lang-zh .home_banner p{
+    font-weight: 500;
+}
 
 
 .container_box{
@@ -386,6 +394,8 @@ li{
     font-weight:600;
     line-height: 2em;
 }
+
+
 
 .home_title{
     font-size: 56px;
@@ -632,6 +642,9 @@ li{
 .web_foot_l a{
     margin-right: 40px;
 }
+.lang-zh .web_foot_l a{
+    font-weight: 500;
+}
 
 .web_foot_r{
     display: flex;
@@ -685,6 +698,11 @@ li{
     /* overflow: auto; */
     padding-bottom: 20px;
     flex-wrap: wrap;
+}
+
+.lang-zh .web_head ul{
+    /* font-size: 16px; */
+    font-weight: 500;
 }
 
 .web_head ul li{
@@ -803,6 +821,11 @@ li{
 .world_data ul li{
     text-align: center;
 }
+
+.world_data ul li p{
+    font-weight: 500;
+}
+
 .world_data ul li h1{
     font-size: 36px;
 }
@@ -834,7 +857,7 @@ li{
 
 .article_box{
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.6;
     /* text-align: justify; */
     padding-left: 40px;
@@ -887,6 +910,7 @@ li{
     margin-top: 20px; 
     max-width: 833px;
     font-size: 18px;
+    font-weight: 500;
 }
 
 
@@ -922,6 +946,7 @@ li{
     /* font-size: 16px; */
     font-size: 18px;
     max-width: 730px;
+    font-weight: 500;
 }
 
 .team_designer{
@@ -965,7 +990,7 @@ li{
 
 .designer_introduce .designer_info{
     font-size: 16px;
-    font-weight:400;
+    font-weight:500;
     width: 100%;
 }
 
@@ -1008,6 +1033,8 @@ li{
 }
 
 
+
+
 .factory_pt{
     display: flex;
     justify-content: space-between;
@@ -1043,6 +1070,7 @@ li{
 }
 
 
+
 .factory_notice{
     border-top: 1px solid #DADADA;
     padding-top: 70px;
@@ -1053,6 +1081,10 @@ li{
     font-weight: 600;
     font-size: 35px;
     margin-top: 30px;
+}
+
+.lang-zh .factory_notice h2{
+    font-weight: 500;
 }
 
 .factory_listbox{
@@ -1074,6 +1106,9 @@ li{
 }
 .factory_list_name p{
     margin-top: 10px;
+}
+.lang-zh .factory_list_name p{
+    font-weight: 500;
 }
 .factory_list_name h1{
     font-weight: bold;
@@ -1116,6 +1151,9 @@ li{
     font-weight: 600;
     list-style:disc;
     line-height: 3em;
+}
+.lang-zh .quality ul li{
+    font-weight: 500;
 }
 
 .attestation{
@@ -1182,6 +1220,9 @@ li{
     font-weight: 600;
     margin-bottom: 80px;
 }
+.lang-zh .immersive ul h2{
+    font-weight: 500;
+}
 
 .immersive ul li{
     border: 1px solid #dedede;
@@ -1189,6 +1230,9 @@ li{
     border-radius: 4px;
     margin-top: 15px;
     font-weight: 600;
+}
+.lang-zh .immersive ul li{
+    font-weight: 500;
 }
 
 .immersive_photo{
@@ -1202,6 +1246,9 @@ li{
     max-width: 800px;
     margin: 0 auto;
     margin-top: 15px;
+}
+.lang-zh .immersive_photo p{
+    font-weight: 500;
 }
 
 .fully_bg{
@@ -1218,7 +1265,7 @@ li{
     margin-top: 12px;
     font-size: 35px;
     max-width: 1200px;
-    font-weight: 600;
+    font-weight: 700;
     text-transform:math-auto;
 }
 
@@ -1251,6 +1298,9 @@ li{
     font-size: 14px;
     font-weight: 600;
 }
+.lang-zh .distinctions ul li p{
+    font-weight: 500;
+}
 
 .distinctions ul li{
         margin-bottom: 70px;
@@ -1280,6 +1330,9 @@ li{
 .ai_soon ul li p{
     font-size: 14px;
     font-weight: 600;
+}
+.lang-zh .ai_soon ul li p{
+    font-weight: 500;
 }
 
 .ai_soon ul li{
@@ -1376,6 +1429,10 @@ li{
     cursor: pointer;
 }
 
+.lang-zh .intelligent_billboard ul li{
+    font-weight: 500;
+}
+
 .g_active{
     background-color: #31569A;
     color: white;
@@ -1408,6 +1465,10 @@ li{
     font-weight: 600;
     max-width: 750px;
 }
+.lang-zh .intelligent_title p{
+    font-weight: 500;
+}
+
 .ustyylit{
     display: flex;
     align-items: center;
@@ -1444,6 +1505,7 @@ li{
     font-size: 14px;
     font-weight: 600;
 }
+
 .ustyylit_image{
     max-width: 700px;
 }
@@ -1506,12 +1568,15 @@ li{
     font-weight: 600;
     font-size: 14px;
 }
-
+.lang-zh .customlining_introduce li p{
+    font-weight: 500;
+}
 
 
 .customlining_n1 .customlining_introduce{
     margin-right: 130px;
     max-width: 380px;
+    min-width: 380px;
 }
 
 .customlining_n2{
@@ -1521,6 +1586,7 @@ li{
 .customlining_n2 .customlining_introduce{
     margin-left: 80px;
     max-width: 380px;
+    min-width: 380px;
 }
 
 
@@ -1553,6 +1619,9 @@ li{
     max-width: 590px;
     font-size: 18px;
     font-weight: 600;
+}
+.lang-zh .new3d_title p{
+    font-weight: 500;
 }
 
 
@@ -1684,7 +1753,7 @@ li{
     margin-top: 12px;
     font-size: 35px;
     max-width: 1200px;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: math-auto;
 }
 
@@ -1715,6 +1784,9 @@ li{
     font-size: 16px;
     font-weight: 600;
     line-height: 1.8;
+}
+.lang-zh .ai_big li p{
+    font-weight: 500;
 }
 
 
@@ -2292,13 +2364,21 @@ li{
         padding-top: 0px;
     }
     .home_banner h1 {
-        font-size: 47px;
+        font-size: 48px;
         margin-top: 10px;
+    }
+    .lang-zh .home_banner h1 {
+        letter-spacing: 2px;
+        line-height: 1.1;
     }
     .home_banner p{
         font-size: 13px;
         bottom: 5.5%;
         left: 9%;
+    }
+    .lang-zh .home_banner p {
+        font-weight: 500;
+        font-size: 14px;
     }
     .home_title{
         font-size: 33px;
@@ -2345,6 +2425,9 @@ li{
         margin-top: 35px;
         gap: 30px;
     }
+    .lang-zh .factory_list_name p{
+        font-size: 15px;
+    }
     .factory_board_img{
         height: 150px;
     }
@@ -2375,6 +2458,9 @@ li{
     }
     .contactinfo{
             padding-bottom: 60px;
+    }
+    .contactinfo_box label{
+        font-size: 14px;
     }
     .web_foot{
         font-size: 14px;
@@ -2468,11 +2554,15 @@ li{
         padding-left: 30px;
         padding-right: 30px;
     }
+    .lang-zh .web_head ul{
+        font-size: 15px;
+    }
     .web_title{
         font-size: 33px;
     }
     .article_box{
         font-weight: 400;
+        font-size:15px ;
     }
     .about_dayang {
         padding-top: 50px;
@@ -2514,6 +2604,9 @@ li{
     .team_p{
         margin-top: 20px;
     }
+    .lang-zh .subtitle{
+        font-size: 15px;
+    }
     .team_designer{
         padding: 30px;
     }
@@ -2525,7 +2618,7 @@ li{
         padding-bottom: 90px;
     }
     .designer_introduce .subtitle {
-        width: 90%;
+        width: 100%;
         margin-top: 15px;
     }
     .designer_name {
@@ -2543,8 +2636,11 @@ li{
         min-width: 220px;
     }
     .footprints_title{
-        margin-bottom: 30px;
-        font-size: 26px;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+    .lang-zh .footprints_title{
+        font-size: 22px;
     }
     .partners_logo .container_box{
         padding: 0;
@@ -2578,7 +2674,9 @@ li{
     .factory_data_t_r{
         padding-bottom:0;
     }
-
+    .factory_data_t ul li p{
+        font-size: 15px;
+    }
     .factory_pt{
         border-top: 1px solid #dadada;
         padding-bottom: 70px;
@@ -2589,6 +2687,7 @@ li{
     .factory_pt_l ul p {
         margin-bottom: 40px;
         max-width: 80%;
+        font-size: 15px;
     }
     .factory_pt_r img {
         margin-top: 7px;
@@ -2625,6 +2724,9 @@ li{
         list-style: none;
         margin-bottom: 32px;
     }
+    .lang-zh .quality ul li {
+        font-size: 15px;
+    }
     .attestation_n {
         padding: 20px;
     }
@@ -2637,9 +2739,17 @@ li{
     .customization_billboard h2 {
         font-size: 42px;
     }
+    .lang-zh .customization_billboard h2{
+        font-size: 50px;
+        font-weight: 500;
+    }
     .customization_billboard h1 {
         font-size: 52px;
     }
+    .lang-zh .customization_billboard h1 {
+        font-size: 60px;
+    }
+
     .customization_billboard {
         margin-top: 240px;
     }
@@ -2648,6 +2758,9 @@ li{
     }
     .immersive ul h2{
         font-size: 26px;
+    }
+    .lang-zh .immersive ul h2 {
+        font-size: 24px;
     }
     .immersive ul li{
         padding: 16px 15px;
@@ -2665,7 +2778,7 @@ li{
         padding-top: 40px;
     }
     .fully_title h2 {
-        font-size: 26px;
+        font-size: 24px;
     }
     .fully_title {
         padding-top: 50px;
@@ -2750,9 +2863,11 @@ li{
     }
     .customlining_n1 .customlining_introduce {
         max-width: 90%;
+        min-width: 100%;
     }
     .customlining_n2 .customlining_introduce {
         max-width: 90%;
+        min-width: 100%;
     }
     .intelligent_title p {
         font-size: 16px;
@@ -2826,6 +2941,7 @@ li{
     .ai_big li p {
         line-height: 1.4;
         margin-top: 5px;
+        font-size: 15px;
     }
     .ai_big {
         margin-bottom: 80px;

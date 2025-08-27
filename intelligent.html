@@ -24,11 +24,11 @@
     <div class="intelligent_banner section">
             <div class="animation_d"></div>
             <div class="intelligent_billboard ">
-                <h1>Full Systematization.</h1>
-                <h1>The Future Is Now.</h1>
+                <h1>{{ $t('intelligent.pageTitle') }}</h1>
+                <h1>{{ $t('intelligent.subtitle') }}</h1>
                 <ul>
-                    <li :class="{g_active: activeIndex === 0}" @click="scrollTo('point-System')">Full-Systematization</li>
-                    <li :class="{g_active: activeIndex === 1}" @click="scrollTo('point-Future')">Future Concept</li>
+                    <li :class="{g_active: activeIndex === 0}" @click="scrollTo('point-System')">{{ $t('intelligent.pageNav.Nav1') }}</li>
+                    <li :class="{g_active: activeIndex === 1}" @click="scrollTo('point-Future')">{{ $t('intelligent.pageNav.Nav2') }}</li>
                 </ul>
             </div>
     </div>
@@ -36,30 +36,30 @@
         
         <div class="container_box intelligent_box">
             <div class="intelligent_title" ref="point-System">
-                <h1>Ustyylit System</h1>
-                <p>USTYYLIT is an online platform for custom apparel brands, connecting design, fabric selection, and production in one streamlined workflow.</p>
+                <h1>{{ $t('intelligent.ustyylitSystem.title') }}</h1>
+                <p>{{ $t('intelligent.ustyylitSystem.tagline') }}</p>
             </div>
             <div class="ustyylit ustyylit_n1">
                 <div class="ustyylit_introduce">
                     <ul>
                         <img src="images/to.png" alt="">
                         <li>
-                            <h3>Full-Process Digital Management</h3>
-                            <p>Integrated design to production for higher efficiency and fewer errors.</p>
+                            <h3>{{ $t('intelligent.ustyylitSystem.items.items1.title') }}</h3>
+                            <p>{{ $t('intelligent.ustyylitSystem.items.items1.desc') }}</p>
                         </li>
                     </ul>
                     <ul>
                         <img src="images/to.png" alt="">
                         <li>
-                            <h3>3D Visualization</h3>
-                            <p>Real-time 3D preview of styles and fabrics.</p>
+                            <h3>{{ $t('intelligent.ustyylitSystem.items.items2.title') }}</h3>
+                            <p>{{ $t('intelligent.ustyylitSystem.items.items2.desc') }}</p>
                         </li>
                     </ul>
                     <ul>
                         <img src="images/to.png" alt="">
                         <li>
-                            <h3>Full-Process Digital Management</h3>
-                            <p>Remote style selection and customization.</p>
+                            <h3>{{ $t('intelligent.ustyylitSystem.items.items3.title') }}</h3>
+                            <p>{{ $t('intelligent.ustyylitSystem.items.items3.desc') }}</p>
                         </li>
                     </ul>
                 </div>
@@ -70,22 +70,22 @@
                     <ul>
                         <img src="images/to.png" alt="">
                         <li>
-                            <h3>Fast Factory Ordering</h3>
-                            <p>Direct order submission to production line.</p>
+                            <h3>{{ $t('intelligent.ustyylitSystem.items.items4.title') }}</h3>
+                            <p>{{ $t('intelligent.ustyylitSystem.items.items4.desc') }}</p>
                         </li>
                     </ul>
                     <ul>
                         <img src="images/to.png" alt="">
                         <li>
-                            <h3>Flexible Customization</h3>
-                            <p>Various styles, fabrics, and accessories options.</p>
+                            <h3>{{ $t('intelligent.ustyylitSystem.items.items5.title') }}</h3>
+                            <p>{{ $t('intelligent.ustyylitSystem.items.items5.desc') }}</p>
                         </li>
                     </ul>
                     <ul>
                         <img src="images/to.png" alt="">
                         <li>
-                            <h3>Data-Driven Decisions</h3>
-                            <p>Optimized design and production with big data.</p>
+                            <h3>{{ $t('intelligent.ustyylitSystem.items.items6.title') }}</h3>
+                            <p>{{ $t('intelligent.ustyylitSystem.items.items6.desc') }}</p>
                         </li>
                     </ul>
                 </div>
@@ -98,23 +98,23 @@
     <div class="gradient_bg2">
         <div class="container_box intelligent_box">
             <div class="intelligent_title lining_title">
-                    <h1>Custom Linings Design</h1>
-                    <p>The Custom Lining feature aims to offer customers more personalized options, enhancing the uniqueness of bespoke garments and strengthening brand identity.</p>
+                    <h1>{{ $t('intelligent.customLiningsDesign.title') }}</h1>
+                    <p>{{ $t('intelligent.customLiningsDesign.tagline') }}</p>
             </div>
             <div class="customlining customlining_n1">
                 <div class="customlining_image"><img src="images/Lining1.png" width="100%" alt=""></div>
                 <ul class="customlining_introduce">
                     <li>
-                        <h3>Personalized Pattern Design</h3>
-                        <p>Allows uploading custom patterns to create unique lining styles.</p>
+                        <h3>{{ $t('intelligent.customLiningsDesign.items.items1.title') }}</h3>
+                        <p>{{ $t('intelligent.ustyylitSystem.items.items1.desc') }}</p>
                     </li>
                     <li>
-                        <h3>Easy-to-Use Design Tools</h3>
-                        <p>No professional design skills needed; easily crop, scale, and arrange patterns.</p>
+                        <h3>{{ $t('intelligent.customLiningsDesign.items.items2.title') }}</h3>
+                        <p>{{ $t('intelligent.ustyylitSystem.items.items2.desc') }}</p>
                     </li>
                     <li>
-                        <h3>Real-Time Preview</h3>
-                        <p>Instantly preview lining designs to ensure expectations are met.</p>
+                        <h3>{{ $t('intelligent.customLiningsDesign.items.items3.title') }}</h3>
+                        <p>{{ $t('intelligent.ustyylitSystem.items.items3.desc') }}</p>
                     </li>
                 </ul>
             </div>
@@ -122,20 +122,20 @@
                 <div class="customlining_image"><img src="images/Lining2.png" width="100%" alt=""></div>
                 <ul class="customlining_introduce">
                     <li>
-                        <h3>Enhances Brand Identity</h3>
-                        <p>Custom linings enhance garment uniqueness and strengthen brand image.</p>
+                        <h3>{{ $t('intelligent.customLiningsDesign.items.items4.title') }}</h3>
+                        <p>{{ $t('intelligent.ustyylitSystem.items.items4.desc') }}</p>
                     </li>
                     <li>
-                        <h3>Fast Feedback and Revision</h3>
-                        <p>Professional designers provide feedback within 24-48 hours after upload.</p>
+                        <h3>{{ $t('intelligent.customLiningsDesign.items.items5.title') }}</h3>
+                        <p>{{ $t('intelligent.ustyylitSystem.items.items5.desc') }}</p>
                     </li>
                 </ul>
             </div>
         </div>
 
         <div class="container_box new3d_title">
-            <h1>3D Visualization</h1>
-            <p>A 3D customization platform for fashion brands — enabling remote style selection, real-time fabric preview, and direct ordering to production.</p>
+            <h1>{{ $t('intelligent.threeDVisualization.title') }}</h1>
+            <p>{{ $t('intelligent.threeDVisualization.tagline') }}</p>
         </div>
 
         <div class="swiper-container new3d_swiper">
@@ -165,8 +165,8 @@
             <img src="images/new3d-gif.gif" width="100%" alt="">
             <img src="images/new3dyc.jpg" width="100%" alt="">
         </div>
-        <div class="container_box new3dbtn_title" style=" ">
-            <h1>3D customization: design, preview, and create with ease.</h1>
+        <div class="container_box new3dbtn_title" >
+            <h1>{{ $t('intelligent.threeDVisualization.slogan') }}</h1>
         </div>
 
         <div class="container_box new3d_fine">
@@ -174,19 +174,19 @@
             <el-col :sm="8" :xs="24">
                 <div class="new3d_fine_n">
                     <i class="ri-box-3-fill" style="color: #6F71F8;"></i>
-                    <p>3D Fitting & Real-Time Preview</p>
+                    <p>{{ $t('intelligent.threeDVisualization.sloganList.list1') }}</p>
                 </div>
             </el-col>
             <el-col :sm="8" :xs="24">
                 <div class="new3d_fine_n">
                     <i class="ri-pencil-ruler-2-fill" style="color: #E08E00;"></i>
-                    <p>Personalized Custom Design</p>
+                    <p>{{ $t('intelligent.threeDVisualization.sloganList.list2') }}</p>
                 </div>
             </el-col>
             <el-col :sm="8" :xs="24">
                 <div class="new3d_fine_n">
                     <i class="ri-survey-fill" style="color: #2CA864;"></i>
-                    <p>Direct Save to Production Order</p>
+                    <p>{{ $t('intelligent.threeDVisualization.sloganList.list3') }}</p>
                 </div>
             </el-col>
         </el-row>
@@ -198,86 +198,52 @@
     <div class="ai_bgbox section">
 
     <div class="ai_bg" ref="point-Future">
-        <h1>The Future Is Now.</h1>
+        <h1>{{ $t('intelligent.futureBanner') }}</h1>
         <p>AI Generation</p>
     </div>
     
     <div class="container_box Future_title">
-            <p class="subtitle">Future Concept</p>
+            <p class="subtitle">{{ $t('intelligent.futureConcept.title') }}</p>
             <h2 class="web_title ">
-                Innovate the fashion industry! Single item minimum order, intelligent design, virtual try on, flexible supply chain to achieve on-demand fast response, covering from finished clothing to high-end orders, meeting personalized needs.
+                {{ $t('intelligent.futureConcept.Description') }}
             </h2>
     </div>
 
     <ul class="ai_big">
         <li>
             <div style="background-image: url(images/ai-image1.jpg);"></div>
-            <h4>MTO Casual Wear Production</h4>
-            <p>Made-to-order casualwear - Produce only when ordered to minimize inventory</p>
+            <h4>{{ $t('intelligent.futureConcept.main.main1.title') }}</h4>
+            <p>{{ $t('intelligent.futureConcept.main.main1.desc') }}</p>
         </li>
         <li>
             <div style="background-image: url(images/ai-image2.jpg);"></div>
-            <h4>Virtual Try-On Technology</h4>
-            <p>Photo-powered garment simulation - Instantly visualize clothing try-on effects through AI-generated images & videos</p>
+            <h4>{{ $t('intelligent.futureConcept.main.main2.title') }}</h4>
+            <p>{{ $t('intelligent.futureConcept.main.main2.desc') }}</p>
         </li>
         <li>
             <div style="background-image: url(images/ai-image3.jpg);"></div>
-            <h4>Rapid Replenishment Program</h4>
-            <p>Fast restocking program - Quickly respond to market demand with shorter lead times</p>
+            <h4>{{ $t('intelligent.futureConcept.main.main3.title') }}</h4>
+            <p>{{ $t('intelligent.futureConcept.main.main3.desc') }}</p>
         </li>
         <li>
             <div style="background-image: url(images/ai-image4.jpg);"></div>
-            <h4>Photo-Based Measurement System</h4>
-            <p>AI body measurement - Smart sizing through photo analysis </p>
+            <h4>{{ $t('intelligent.futureConcept.main.main4.title') }}</h4>
+            <p>{{ $t('intelligent.futureConcept.main.main4.desc') }}</p>
         </li>
     </ul>
 
     <div class="container_box  ai_soon" style="border-top: 1px solid #DADADA;">
         <div>
-            <p class="subtitle">Coming Soon</p>
-            <h1 class="web_title">Future Concept</h1>
+            <p class="subtitle">{{ $t('intelligent.futureConcept.comingSoon') }}</p>
+            <h1 class="web_title">{{ $t('intelligent.futureConcept.title') }}</h1>
         </div>
         <ul>
-            <li>
-                <h4>AI-Empowered Franchising Model</h4>
-                <p>AI-powered franchise system - Intelligent technology-driven franchising ecosystem</p>
-            </li>
-            <li>
-                <h4>Ultra-Low MOQ for Small Batches(1 SKU Minimum)</h4>
-                <p>Ultra-low minimum order quantity - Production available from just 1 single SKU</p>
-            </li>
-            <li>
-                <h4>Rapid Replenishment Program</h4>
-                <p>Fast restocking program - Quickly respond to market demand with shorter lead times</p>
-            </li>
-            <li>
-                <h4>MTO Casual Wear Production</h4>
-                <p>Made-to-measure formalwear - Premium customized tailoring service</p>
-            </li>
-            <li>
-                <h4>MTM Formal Wear Tailoring</h4>
-                <p>Made-to-measure formalwear - Premium customized tailoring service</p>
-            </li>
-            <li>
-                <h4>AI-Driven Design Solutions</h4>
-                <p>AI-powered design - Algorithm-generated fashion styles for efficient creation</p>
-            </li>
-            <li>
-                <h4>Virtual Try-On Technology</h4>
-                <p>Photo-powered garment simulation - Instantly visualize clothing try-on effects through AI-generated images & videos</p>
-            </li>
-            <li>
-                <h4>Photo-Based Measurement System</h4>
-                <p>AI body measurement - Smart sizing through photo analysis</p>
-            </li>
-            <li>
-                <h4>Integrated Multi-Business Model Ecosystem</h4>
-                <p>Unified business ecosystem - Seamless omnichannel retail integration</p>
+            <li v-for="(futures, index) in $t('intelligent.futureConcept.items')" :key="index">
+                <h4>{{ futures.title }}</h4>
+                <p>{{ futures.desc }}</p>
             </li>
         </ul>
         </div>
-
-
 
 
     <site-footer></site-footer>
@@ -285,39 +251,13 @@
     
 
 
-
-
-   
-
     
-
-
-    
-  
-
-
-    
-
-  
-
-
-
-
-    
-
-    
-
 
 </template>  
 
 
 
-
-
 </div>
-
-
-
 
 
 
@@ -389,19 +329,7 @@
             },
            
             methods: {
-                // onScroll() {
-                //     const sections = document.querySelectorAll('.section');
-                //     let scrollTop = window.scrollY || document.documentElement.scrollTop;
-
-                //     sections.forEach((sec, i) => {
-                //     let top = sec.offsetTop;
-                //     let bottom = top + sec.offsetHeight;
-                //     if (scrollTop >= top - 100 && scrollTop < bottom - 100) {
-                //         this.activeIndex = i;
-                //     }
-                //     });
-                // },
-
+               
                 scrollTo(refName) {
                     const element = this.$refs[refName];
                     if (element) {

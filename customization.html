@@ -20,11 +20,11 @@
     <site-menu v-model="drawer"></site-menu>
 
     <div class="container_box web_head">
-        <h1 class="web_bigtitle">Personalized customization</h1>
+        <h1 class="web_bigtitle">{{ $t('customization.pageName') }}</h1>
         <ul>
-            <li @click="scrollTo('point-Personalized')">Making Personalized</li>
-            <li @click="scrollTo('point-Customization')">Fully Customization</li>
-            <li @click="scrollTo('point-Distinctions')">Distinctions</li>
+            <li @click="scrollTo('point-Personalized')">{{ $t('customization.pageNav.Nav1') }}</li>
+            <li @click="scrollTo('point-Customization')">{{ $t('customization.pageNav.Nav2') }}</li>
+            <li @click="scrollTo('point-Distinctions')">{{ $t('customization.pageNav.Nav3') }}</li>
         </ul>
     </div>
 
@@ -46,34 +46,32 @@
         <source src="video/pv.webm" type="video/webm">
         </video>
         <div class="customization_billboard">
-            <h2>Right now, </h2>
-            <h1>Double Life</h1>
+            <h2>{{ $t('customization.misc.rightNow') }}</h2>
+            <h1>{{ $t('customization.misc.doubleLife') }}</h1>
         </div>
     </div>
 
     <div class="container_box immersive" ref="point-Personalized">
-        <h1 class="web_title">Immersive Fun Making <br> Personalized</h1>
+        <h1 class="web_title" v-html="$t('customization.making.makingTitle')"></h1>
         <ul>
-            <h2>Custom styles with tailored features, unique linings, and personalized measurements for repeat orders.</h2>
-            <li>Custom Patterns</li>
-            <li>Measurement Profiles for Repeat Orders</li>
-            <li>Personal Style Options</li>
-            <li>Tailored Features</li>
-            <li>Unique Lining Designs</li>
+            <h2>{{ $t('customization.making.title') }}</h2>
+            <li v-for="(makinglist, im) in $t('customization.making.items')" :key="im">
+                {{ makinglist }}
+            </li>
         </ul>
     </div>
 
     <div class="container_box immersive_photo">
         <img src="images/immersive-img.jpg" width="80%" alt="">
-        <p>Custom styles with tailored features, unique linings, and personalized measurements for repeat orders.</p>
+        <p>{{ $t('customization.making.repeatLine') }}</p>
     </div>
 
 
     <div class="fully_bg" ref="point-Customization">
         <div class="container_box fully_title">
-            <p class="subtitle">Fully Customization</p>
+            <p class="subtitle">{{ $t('customization.fully.Descriptiontitle') }}</p>
             <h2 class="web_title ">
-                Your style, your rules: limitless design options for truly one-of-a-kind suits. Each garment is precision tailored by skilled artisans with an obsessive attention to detail.
+                {{ $t('customization.fully.descDescription') }}
             </h2>
         </div>
         <div class="container_box fullybox">
@@ -99,31 +97,11 @@
             </el-row>
         </div>
         <div class="container_box distinctions" ref="point-Distinctions">
-        <h1 class="web_title">Distinctions</h1>
+        <h1 class="web_title">{{ $t('customization.distinctions.distinctionsTitle') }}</h1>
         <ul>
-            <li>
-                <h4>Dependable and Fast: </h4>
-                <p>prompt, reliable delivery.</p>
-            </li>
-            <li>
-                <h4>Strategic Partners for Success: </h4>
-                <p>forging win-win alliances over the long term.</p>
-            </li>
-            <li>
-                <h4>High-Value Quality: </h4>
-                <p>premium products at competitive prices.</p>
-            </li>
-            <li>
-                <h4>Global Leader: </h4>
-                <p>ranking top in the global tailoring industry.</p>
-            </li>
-            <li>
-                <h4>Tech Meets Craft: </h4>
-                <p>merging traditional skills with AI precision.</p>
-            </li>
-            <li>
-                <h4>Great Comfort: </h4>
-                <p>engineered for a supremely comfortable fit.</p>
+            <li v-for="(ditems, index) in $t('customization.distinctions.items')" :key="index">
+                <h4>{{ ditems.title }}</h4>
+                <p>{{ ditems.desc }}</p>
             </li>
         </ul>
         </div>
@@ -135,26 +113,9 @@
 
     
 
-
-    
-
     <site-footer></site-footer>
 
 
-
-
-
-
-    
-
-  
-
-
-
-
-    
-
-    
 
 
 </template>  
@@ -164,11 +125,6 @@
 
 
 </div>
-
-
-
-
-
 
 
 

@@ -371,13 +371,19 @@
                 autoplay : 6000,
                 loop: true,
             });
+
+            this.$watch('$i18n.locale', (newVal) => {
+                document.body.classList.remove('lang-en', 'lang-zh');
+                document.body.classList.add(`lang-${newVal}`);
+            }, { immediate: true }); 
         },
+        
         computed: {
             currentLangLabel() {
             return this.$t("index.langLabel");
             }
         },
-        
+
         methods: {
             
             handleScroll() {

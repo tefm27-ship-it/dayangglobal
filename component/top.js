@@ -31,6 +31,11 @@ Vue.component('site-top', {
         $('html, body').animate({ scrollTop: 0 }, 500);
       }
     });
+
+    this.$watch('$i18n.locale', (newVal) => {
+      document.body.classList.remove('lang-en', 'lang-zh');
+      document.body.classList.add(`lang-${newVal}`);
+    }, { immediate: true }); 
     
   },
   beforeDestroy() {
@@ -44,6 +49,7 @@ Vue.component('site-top', {
       return this.$t("index.langLabel");
     }
   },
+  
   methods: {
     handleScroll() {
       const currentY = window.scrollY || window.pageYOffset;
