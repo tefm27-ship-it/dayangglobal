@@ -2335,6 +2335,9 @@ li{
         height: 28px;
         width: 100px;
     }
+    .menu_box .language{
+        display: none;
+    }
     .menu_btn{
         font-size: 26px;
         width: 68px;
