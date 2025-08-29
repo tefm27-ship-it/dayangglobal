@@ -330,6 +330,7 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #cccccc;
 }
 #video-home{
     /* position: fixed !important; */
@@ -339,7 +340,7 @@ li{
     min-height: 100%;
     width: 100%;
     height: inherit;
-    z-index: -100;
+    z-index: auto;
     background-size: cover;
     object-fit: cover;
 }
@@ -866,6 +867,7 @@ li{
 
 .about_video{
     height: 500px;
+    background-color: #000000;
 }
 
 
@@ -1171,6 +1173,7 @@ li{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    background-color: #cccccc;
 }
 
 
