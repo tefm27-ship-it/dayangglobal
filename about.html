@@ -232,20 +232,30 @@
 
     <script>
         function playVideo() {
-        const video = document.getElementById('video-home');
-            if (video) {
-                if (window.WeixinJSBridge) {
+            const video = document.getElementById('video-home');
+            if (!video) return;
 
-                    WeixinJSBridge.invoke('getNetworkType', {}, () => video.play());
-                } else {
+            let retries = 3; 
+            const tryPlay = () => {
+                video.play().then(() => {
+                    console.log("播放成功");
+                }).catch(err => {
+                    console.log("播放失败:", err);
+                    if (retries-- > 0) {
+                        setTimeout(tryPlay, 500); 
+                    }
+                });
+            };
 
-                    video.play();
-                }
+            if (typeof WeixinJSBridge !== "undefined") {
+                WeixinJSBridge.invoke('getNetworkType', {}, tryPlay);
+            } else {
+                tryPlay();
             }
         }
 
-        document.addEventListener('WeixinJSBridgeReady', playVideo, false);
-        document.addEventListener('touchstart', playVideo, { once: true });
+        document.addEventListener("WeixinJSBridgeReady", playVideo, false);
+        document.addEventListener("touchstart", playVideo, { once: true });
     </script>
 
 

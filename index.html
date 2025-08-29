@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="remix/remixicon.css" />
     <link rel="stylesheet" href="lib/swiper.min.css">
     <link href="css/style.css" rel="stylesheet">
-    
+
 
 </head>
 <body>
@@ -51,6 +51,7 @@
         x5-video-player-fullscreen="false"
         x5-video-orientation="portrait"
         oncontextmenu="return false"
+        preload="auto"
         >
         <source src="video/hv.webm" type="video/webm">
         <source src="video/hv.mp4" type="video/mp4">
@@ -179,7 +180,7 @@
             <ul>
                 <li>{{ $t('index.contact.china.contactAddress') }}</li>
                 <li style="margin-top: 20px;">{{ $t('index.contact.china.contactEmail') }}</li>
-                <li>{{ $t('index.contact.china.contactPhone') }}</li>
+                <!-- <li>{{ $t('index.contact.china.contactPhone') }}</li> -->
             </ul>
         </el-col>
         <el-col :sm="8" :xs="24" class="home_contact_a">
@@ -422,26 +423,33 @@
         createApp(Main).$mount('#app');
     </script>
 
-
-
-
     <script>
         function playVideo() {
-        const video = document.getElementById('video-home');
-            if (video) {
-                if (window.WeixinJSBridge) {
-                WeixinJSBridge.invoke('getNetworkType', {}, () => video.play());
-                } else {
-                video.play();
-                }
+            const video = document.getElementById('video-home');
+            if (!video) return;
+
+            let retries = 3; 
+            const tryPlay = () => {
+                video.play().then(() => {
+                    console.log("播放成功");
+                }).catch(err => {
+                    console.log("播放失败:", err);
+                    if (retries-- > 0) {
+                        setTimeout(tryPlay, 500); 
+                    }
+                });
+            };
+
+            if (typeof WeixinJSBridge !== "undefined") {
+                WeixinJSBridge.invoke('getNetworkType', {}, tryPlay);
+            } else {
+                tryPlay();
             }
         }
-        document.addEventListener('WeixinJSBridgeReady', playVideo, false);
-        document.addEventListener('touchstart', playVideo, { once: true });
 
-
-
-
+        document.addEventListener("WeixinJSBridgeReady", playVideo, false);
+        document.addEventListener("touchstart", playVideo, { once: true });
+        
         $('.web_top').click(function(event) {
             if (event.target === this) {
                 $('html, body').animate({ scrollTop: 0 }, 500);
