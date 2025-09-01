@@ -2324,7 +2324,7 @@ li{
          padding-right: 30px;
     }
     .web_top{
-        padding-left: 25px;
+        padding-left: 20px;
     }
     .web_head ul{
         overflow: auto;
@@ -2335,8 +2335,8 @@ li{
         height: 60px;
     }
     .logo{
-        height: 28px;
-        width: 100px;
+        height: 30px;
+        width: 110px;
     }
     .menu_box .language{
         display: none;
@@ -2358,12 +2358,11 @@ li{
         height: 60px;
     }
     .web_top_bgoff .logo{
-        height: 28px;
+        height: 30px;
     }
 
 
     .home_logo{
-        height: 28px;
         background-image: url(../images/logo.png);
     }
     .home_banner {
